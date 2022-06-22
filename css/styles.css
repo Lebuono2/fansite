@@ -333,7 +333,7 @@
 }
 .encabezado__secundario{
     grid-area: encabezado;
-    background-color: #860037;
+    background: linear-gradient(to left, #860037,#860055,#860080);
     
 }
 .encabezado__secundario h1{
@@ -501,6 +501,9 @@
 .seccion__grupos img{
     width: 100vw;
     height: 40vh;
+}
+.seccion__grupos img:hover{
+    transform: scale(1.1);
 }
 .mapa__clasificados{
     padding: 1%;
