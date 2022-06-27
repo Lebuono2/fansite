@@ -6,53 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fansite</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="./img/favicon.png"/>
 </head>
-<body class="body__principal">
+<body>
         <!----------------------Encabezado---------------------->
-        <header class="encabezado__principal">      
-             <h1 >Fan Site</h1>
-             <h2 >#Compartimos la misma pasión</h2>
-             <div class="contenedor__logo">
-                <a href="./index.html"><img class="contenedor__logo--img" src="./img/logo-qatar-blanco.jpg"  alt="Logo oficial del mundial de qatar"></a>
+        
+        <header class="row encabezado_principal">      
+             <h1 class="col text-primary p-3" >Fan Site</h1>
+             <div class="col">
+                <a href="./index.html"><img class="col logo" src="./img/logo-qatar-blanco.jpg"  alt="Logo oficial del mundial de qatar"></a>
              </div> 
-             <nav class="navegador">
-                <ul>
-                    <li><a href="./index.html">Incio</a></li>
-                    <li><a href="./paginas/sedes.html">Sedes</a></li>
-                    <li><a href="./paginas/grupos.html">Grupos</a></li>
-                    <li><a href="./paginas/fixture.html">Fixture</a></li>
-                    <li><a href="./paginas/conoce-qatar.html">Conoce Qatar</a></li>
-                    <li><a href="./paginas/formulario-segui-tu-pais.html">Suscribite</a></li>
-                </ul>
-            </nav>
+             <h2  class="row">#Compartimos la misma pasión</h2>
+             <nav class="navbar navbar-expand-lg navbar-dark menu_principal">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./paginas/sedes.html">sedes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/grupos.html">Grupos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/fixture.html">Fixture</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/conoce-qatar.html">Conoce Qatar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/formulario-segui-tu-pais.html">Suscribite</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
          <!---------------------FIN-Encabezado---------------------->
-    <section class="cuenta__regresiva">
-        <h2 class="cuenta__regresiva--titulo">Fecha de inicio:   21-11-2022 07:00 hs</h2>
+    <section class="row gap-3">
+        <h2 class="">Fecha de inicio:   21-11-2022 07:00 hs</h2>
     </section>
-    <main class="cuerpo__index">   
+    <main class="row">   
         <!---Video y texto de presentacion-->
-        <section class="cuerpo__index__sec__video">
-            <video src="./multimedia/video-mundial.mp4"  controls></video>
+        <section class="col">
+            <video class="video" src="./multimedia/video-mundial.mp4"  controls></video>
         </section>
-        <aside class="cuerpo__index__mensaje__bienvenida">
+        <aside class="col">
             <h2><strong>Bienvenido al sitio web de los fans</strong></h2>
             <p>#Compartimos la misma pasion, por eso en nuestro sitio encontras todo lo que necesitas saber con respecto al mundial  de futbol masculino organizado por FIFA en Qatar. Conoce las sedes, los grupos, el fixture. Tambien te ayudamos a llegar al mundial teniendo en un solo lugar todas las promociones vigentes para participar por vuelos y tickets para partidos. Todo el contenido que un verdadero fanatico quiere tener.</p>
         </aside>
     </main>
     <!---------------------Footer---------------------->
-    <footer class="pie__pagina">
-            <p class="pie__pagina--mensaje">Mira todos los resumenes de los partidos en nuestros canales Twitch y YouTube</p>
-            <div class="contenedor__redes">
-                <i class="bi bi-twitch"></i>
-                <i class="bi bi-youtube"></i>
-            </div>            
-            <img class="pie__pagina--mascota" src="./img/mascota.jpg" alt="Foto de la mascota oficial del mundial de Qatar 2022">
-    </footer>
+    <div class="card">
+        <div class="card-header">
+          Vivi Qatar
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Suscribite a nuestro canal de Twich y You Tube</p>
+            <footer class="blockquote-footer">Mira los resumen de partidos <i class="bi bi-twitch"></i> <i class="bi bi-youtube"></i></footer>
+          </blockquote>
+        </div>
+      </div>
+    <footer class="row pie__pagina">
+   
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

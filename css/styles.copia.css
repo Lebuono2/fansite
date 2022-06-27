@@ -1,0 +1,774 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  'Roboto', sans-serif,'Courier New', Courier, monospace;
+}
+/*------------Estilos header index---------------------------------------------------------*/
+.body__principal{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100vh 10vh 130vh 30vh;
+    grid-template-areas:
+    "header header"
+    "fecha fecha"
+    "cuerpo cuerpo"
+    "footer footer "
+    ;
+}
+.encabezado__principal{
+    background-image: url(../img/fondoindex.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../img/fondoindex.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-areas: 
+    "titulo logo"
+    "subtitulo subtitulo"
+    "none none"
+    "menu menu"
+    ;
+}
+.encabezado__principal .contenedor__logo{     
+    top: 1vw;
+    grid-area: logo;
+    justify-self: right;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    transition-duration: 3s;
+}
+.encabezado__principal .contenedor__logo:hover{
+    transform: scale(1.5);
+}
+.encabezado__principal .contenedor__logo .contenedor__logo--img{
+
+    border-radius: 100%;
+    width: 28vw;
+    height: 25vh;
+    padding-right: 2vw;
+    padding-top: 3vh;
+}
+.encabezado__principal h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 3vh;
+    padding-left: 2vw;
+    align-self: center;
+    grid-area: titulo;
+    width: auto;
+    height: auto;
+}
+.encabezado__principal h2{
+    padding-top: 1vh;
+    padding-left: 2vw;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    grid-area: subtitulo;
+}
+.navegador{
+    color: white;
+    grid-area: menu;
+    width: 100vw;
+}
+.navegador ul{
+   border-top:  solid 1px;
+   border-bottom: solid 1px;
+   transition-duration: 0.3s;
+   display: flex;
+   overflow: scroll;
+   flex-direction: row;
+}
+.navegador ul li{
+    display: inline-block;
+    color: white;
+    width: 20vh;
+    padding: 10px; 
+}
+.navegador ul li a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+    font-size: larger;
+}
+.navegador ul li:hover{
+   transform: translatey(-15%);
+}
+.navegador ul li a:hover{
+    color: grey;
+    font-weight: 900;
+}
+/*---------FIN---Estilos header index---------------------------------------------------------*/
+/*--------------------------Estilos body index--------------------------------------------------*/
+.cuenta__regresiva{
+    justify-content: center;
+    background: linear-gradient(to left, #860037,#860044,#860050);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: white;
+    grid-area: fecha;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+}
+.cuenta__regresiva--titulo{
+    justify-content: center;
+}
+.cuerpo__index{ 
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    grid-area: cuerpo;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.cuerpo__index__sec__video {
+    height: 80vh;
+    width: 100vw;
+}
+.cuerpo__index__sec__video video{
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+}
+.cuerpo__index__mensaje__bienvenida{
+    font-size: 1rem;
+    padding: 20px;
+    font-weight: 400;
+}
+
+
+
+/*--------------------------------------------------FIN ESTILOS BODY Index ---------------------*/
+/*------------------Estilos footer---------------------------------------------------------*/
+.pie__pagina{
+    grid-area: footer;
+    background-color: #860037;
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 50% 10% 10% 28%;
+    grid-template-rows: 20vh 20vh;
+    grid-template-areas: 
+    "redes redes none mascota"
+    "mensaje mensaje mensaje mascota"
+    ;
+}
+.pie__pagina .pie__pagina--mensaje{
+    color: white;
+    font: 0.5rem;
+    grid-area:  mensaje;
+}
+.pie__pagina .contenedor__redes{
+    grid-area:  redes;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 8px;
+}
+.contenedor__redes i{
+    padding: 5px;
+}
+.pie__pagina .pie__pagina--mascota{
+    width: 25vw;
+    height: 20vh;
+    grid-area: mascota;
+    padding-right: 4px;
+    border-radius: 60%;
+    justify-self: right;
+    align-self: center;
+}
+
+/*--------------------------------------------------FIN ESTILOS Footer ---------------------*/
+/*--------------------------ESTILOS---SEDES------------------------*/
+.body__sedes{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 25vh 1040vh 40vh;
+    grid-template-areas: 
+    "encabezado"
+    "sede"
+    "footer"
+    ;
+}
+.encabezado__secundario{
+    grid-area: encabezado;
+    background: linear-gradient(to left, #860037,#860055,#860080);
+    
+}
+.encabezado__secundario h1{
+    color: white;
+}
+.sedes{
+    grid-area: sede;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+.articulo__sede{
+    padding: 5%;
+}
+.articulo__sede img{
+    width: 92vw;
+    height: 30vh;
+}
+.articulo__sede p{
+    font-size: 1rem;
+}
+
+
+
+/*----------------FIN------ESTILOS----SEDES--------------------------------*/
+/*-----------------------ESTILOS-------------GRUPOS-------------------*/
+.cuerpo__grupos{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 25vh 250vh 40vh;
+    grid-template-areas: 
+    "encabezado"
+    "grupos"
+    "footer";
+}
+.grupos{
+    grid-area: grupos;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.seccion__grupos__notas{
+    padding: 5%;
+}
+.seccion__grupos__notas p{
+    padding: 5%;
+    font-size: 1.3rem;
+}
+.seccion__grupos img{
+    width: 100vw;
+    height: 40vh;
+}
+.seccion__grupos img:hover{
+    transform: scale(1.1);
+}
+.mapa__clasificados{
+    padding: 1%;
+    width: 100vw;
+}
+.mapa__clasificados h2{
+    padding: 2%;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.mapa__clasificados img{
+    width: 100vw;
+    height: 50vh;
+}
+
+/*------------FIN-----------ESTILOS-------------GRUPOS-------------------*/
+/*-----------------------ESTILOS-------------FIXTURE-------------------*/
+.cuerpo__fixture{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh 400vh 320vh 40vh ;
+    grid-template-areas:
+    "encabezado"
+    "fixture"
+    "finales"
+    "footer";
+}
+.fixture{
+    grid-area: fixture;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.nota__fixture{
+    padding: 2%;
+}
+.nota__fixture h2{
+    font-size: 2rem;
+}
+.nota__fixture p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 2%;
+}
+.fixture__grupos img{
+    width: 100%;
+}
+.fase_final{
+    grid-area: finales;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+.fixture__finales{
+    align-self: center;
+    justify-self: center;
+    text-justify: distribute;
+    padding: 2%;
+    border-top: gray solid 2px;
+    width: 100vw;
+}
+.fixture__finales h3{
+    font-size: 2rem;
+    background-color: #860050;
+    color: wheat;
+    padding: 2%;
+    justify-self: center;
+    
+}
+.fixture__finales h4{
+    font-size: 1.3rem;
+    padding: 2%;
+    justify-self: center;
+}
+.fixture__finales p{
+    padding: 1%;
+    font-size: 1.1rem;
+}
+
+/*----------------------FIN--------ESTILOS---------FIXTURE------------*/
+/*-----------------ESTILOS-----------------conoce-qatar--------------*/
+    .cuerpo__qatar{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 180vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "qatar"
+        "footer";
+    }
+    .nota__qatar{
+        grid-area: qatar;
+    }
+    .seccion__mapa img{
+        width: 100vw;
+        padding: 5%;
+    }
+    .aside__ciudades{
+        padding: 2%;
+    }
+
+/*-----------------------FIN-------ESTILOS-----CONOCE-----------QATAR---------*/
+/*---------------------------------ESTILOS--------------------FORMULARIO---------*/
+.cuerpo_formulario{
+    display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 50vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "formulario"
+        "footer";
+}
+    .nota__formulario{
+        grid-area: formulario;
+    }
+    .nota__formulario h3{
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 2%;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        align-self:center;
+        justify-self: center;
+        height: 60vh;
+    }
+/*---------------ESTILOS--------------------FORMULARIO---------*/
+/*----------------------------------------------------------------------Media querys---------*/
+
+@media(min-width: 480px){
+    /*------------SEDES--------------*/
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 900vh 40vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .articulo__sede img{
+        width: 92vw;
+        height: 50vh;
+    }
+}
+@media(min-width: 600px){
+    /*------------SEDES--------------*/
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 600vh 40vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .sedes{
+        grid-area: sede;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: first baseline;
+        width: 45vw;
+        height: 600vh; 
+    }
+    .articulo__sede{
+        padding: 5%;
+        height: 150vh;
+    }
+    .articulo__sede img{
+        width: 45vw;
+        height: 40vh;
+    }
+    .articulo__sede p{
+        font-size: 1rem;
+    }
+    /*------grupos-----*/
+    .seccion__grupos img{
+        width: 100vw;
+        height: 70vh;
+    }
+    .mapa__clasificados{
+        padding: 1%;
+        width: 100vw;
+    }
+    .mapa__clasificados img{
+        width: 100vw;
+        height: 70vh;
+    }
+    /*------Fixture----*/
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 500vh 450vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+    /*----conoce-qatar----*/
+    .cuerpo__qatar{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 200vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "qatar"
+        "footer";
+    }
+}
+@media(min-width: 768px){
+    /*----Encabezado index--------*/
+    .encabezado__principal .contenedor__logo .contenedor__logo--img{
+        border-radius: 100%;
+        width: 30vw;
+        height: 30vh;
+    }
+    .encabezado__principal .contenedor__logo{     
+        padding-top: 6vh;
+        padding-right: 4vw;
+    }
+    .encabezado__principal h1{
+        color: white;
+        font-size: 3rem;
+        font-weight: 900;
+        padding-top: 3vh;
+        padding-left: 2vw;
+        align-self: center;
+        grid-area: titulo;
+        width: auto;
+        height: auto;
+    }
+    .encabezado__principal h2{
+        padding-top: 1vh;
+        padding-left: 2vw;
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 2rem;
+        font-weight: 900;
+        grid-area: subtitulo;
+    }
+    .navegador{
+        color: white;
+        grid-area: menu;
+        display: flex;
+        align-content: center;
+        flex-direction: column;    
+    }
+    .navegador ul{
+        padding-left: 10vw;
+        overflow:hidden;
+     }
+     /*-----------BODY Index----------*/
+    .cuenta__regresiva{
+        background: linear-gradient(to left, #860037,#860044,#860050);
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 1rem;
+        color: white;
+        grid-area: fecha;
+        font-weight: 500;
+        display: flex;
+    }
+    .cuenta__regresiva--titulo{
+        justify-content: center;
+    }
+    /*-------------Footer---------*/
+    .pie__pagina{
+        padding-left: 2vw;
+    }
+    .pie__pagina .pie__pagina--mascota{
+        padding-right: 9px;
+    }
+    /*-------------Sedes---------*/
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 570vh 40vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .sedes{
+        grid-area: sede;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: first baseline;
+        width: 45vw;
+        height: 570vh;    
+    }
+    .articulo__sede{
+        padding: 5%;
+        height: 140vh;
+    }
+    .articulo__sede img{
+        width: 45vw;
+        height: 45vh;
+    }
+    .articulo__sede p{
+        font-size: 1rem;
+    }
+    /*------Fixture----*/
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 600vh 530vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+    /*----conoce-qatar-----*/
+    .cuerpo__qatar{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 210vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "qatar"
+        "footer";
+    }
+    
+}
+@media(min-width: 1024px){
+    /*----Encabezado index--------*/
+    .encabezado__principal .contenedor__logo .contenedor__logo--img{
+        border-radius: 100%;
+        width: 23vw;
+        height: 30vh;
+    }
+    .encabezado__principal .contenedor__logo{     
+        padding-top: 6vh;
+        padding-right: 4vw;
+    }
+    .navegador{
+        color: white;
+        grid-area: menu;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+    .navegador ul{
+        padding-left: 10vw;
+        overflow:hidden;
+     }
+     .navegador ul li{
+         width: 15vw;
+     } 
+    
+    /*-----------BODY Index----------*/
+    .cuerpo__index__mensaje__bienvenida{
+        font-size: 1.2rem;
+        padding: 20px;
+        font-weight: 400;
+    }
+    .cuerpo__index{ 
+        padding-top: 3%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+        grid-area: cuerpo;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    .cuerpo__index__sec__video {
+        height: 80vh;
+        width: 50vw;
+    }
+    .cuerpo__index__sec__video video{
+        height: 80vh;
+        width: 50vw;
+        justify-self: center;
+    }
+    .cuerpo__index__mensaje__bienvenida{
+        font-size: 1.2rem;
+        padding: 60px;
+        font-weight: 400;
+        align-self:flex-start;
+    }
+    /*-------------Footer---------*/
+    .pie__pagina .pie__pagina--mascota{
+        width: 22vw;
+        height: 30vh;
+        padding-right: 2vw;
+    }
+    .contenedor__redes i{
+        padding: 5px;
+        font-size: x-large;
+    }
+    
+    .encabezado__secundario h1{
+        color: white;
+        font-size: 3rem;
+    }
+    /*-------------Sedes---------*/
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 600vh 40vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .sedes{
+        grid-area: sede;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: first baseline;
+        width: 45vw;
+        height: 600vh;
+    }
+    .articulo__sede{
+        padding: 5%;
+        height: 150vh;
+    }
+    .articulo__sede img{
+        width: 45vw;
+        height: 50vh;
+    }
+    .articulo__sede p{
+        font-size: 1.2rem;
+    } 
+    /*-------Grupos------*/
+    .cuerpo__grupos{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 300vh 40vh;
+        grid-template-areas: 
+        "encabezado"
+        "grupos"
+        "footer";
+    }
+    .seccion__grupos__notas p{
+        padding: 5%;
+        font-size: 1.2rem;
+    }
+    .seccion__grupos__notas h2{
+        font-size: 2rem;
+    }
+    .mapa__clasificados h2{
+        padding: 2%;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .seccion__grupos img{
+        width: 100vw;
+        height: 90vh;
+    }
+    .mapa__clasificados{
+        padding: 1%;
+        width: 100vw;
+    }
+    .mapa__clasificados img{
+        width: 100vw;
+        height: 100vh;
+    }
+    /*----Fixture---*/
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 600vh 780vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+    /*----conoce-qatar-----*/
+    .cuerpo__qatar{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 260vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "qatar"
+        "footer";
+    }
+    
+}
+@media(min-width: 1200px){
+    /*-----Fixture----*/
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 600vh 810vh 40vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+
+}
