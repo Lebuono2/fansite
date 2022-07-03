@@ -1,0 +1,110 @@
+.cuerpo__fixture{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh 400vh 320vh 10vh ;
+    grid-template-areas:
+    "encabezado"
+    "fixture"
+    "finales"
+    "footer";
+}
+.fixture{
+    grid-area: fixture;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.nota__fixture{
+    padding: 2%;
+}
+.nota__fixture h2{
+    font-size: 2rem;
+}
+.nota__fixture p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 2%;
+}
+.fixture__grupos img{
+    width: 100%;
+}
+.fase_final{
+    grid-area: finales;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+.fixture__finales{
+    align-self: center;
+    justify-self: center;
+    text-justify: distribute;
+    padding: 2%;
+    border-top: gray solid 2px;
+    width: 100vw;
+}
+.fixture__finales h3{
+    font-size: 2rem;
+    background-color: #860050;
+    color: wheat;
+    padding: 2%;
+    justify-self: center;
+    
+}
+.fixture__finales h4{
+    font-size: 1.3rem;
+    padding: 2%;
+    justify-self: center;
+}
+.fixture__finales p{
+    padding: 1%;
+    font-size: 1.1rem;
+}
+@media(min-width: 600px){
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 500vh 450vh 10vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+}
+@media(min-width: 768px){
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 600vh 530vh 10vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+}
+@media(min-width: 1024px){
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 600vh 780vh 10vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+}
+@media(min-width: 1200px){
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 600vh 870vh 10vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+}

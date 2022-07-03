@@ -1,0 +1,135 @@
+.card-img-top{
+    height: 200px;
+   
+}
+.bg-qatar1{
+    background-color:#860080;
+}
+.bg-qatar2{
+    background-color: #860060;
+}
+.bg-qatar3{
+    background-color: #860050;
+}
+.bg-qatar4{
+    background-color: #860040;
+}
+.bg-qatar5{
+    background-color: #860070;
+}
+.card-title{
+    font-weight: bold;
+}
+
+@media(min-width: 480px){
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 900vh 10vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .articulo__sede img{
+        width: 92vw;
+        height: 50vh;
+    }
+}
+@media(min-width: 600px){
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 600vh 10vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .sedes{
+        grid-area: sede;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: first baseline;
+        width: 45vw;
+        height: 600vh; 
+    }
+    .articulo__sede{
+        padding: 5%;
+        height: 150vh;
+    }
+    .articulo__sede img{
+        width: 45vw;
+        height: 40vh;
+    }
+    .articulo__sede p{
+        font-size: 1rem;
+    }
+}
+@media(min-width: 768px){
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 570vh 10vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .sedes{
+        grid-area: sede;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: first baseline;
+        width: 45vw;
+        height: 570vh;    
+    }
+    .articulo__sede{
+        padding: 5%;
+        height: 140vh;
+    }
+    .articulo__sede img{
+        width: 45vw;
+        height: 45vh;
+    }
+    .articulo__sede p{
+        font-size: 1rem;
+    }
+}
+@media(min-width: 1024px){
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 600vh 10vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .sedes{
+        grid-area: sede;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: first baseline;
+        width: 45vw;
+        height: 600vh;
+    }
+    .articulo__sede{
+        padding: 5%;
+        height: 150vh;
+    }
+    .articulo__sede img{
+        width: 45vw;
+        height: 50vh;
+    }
+    .articulo__sede p{
+        font-size: 1.2rem;
+    } 
+}

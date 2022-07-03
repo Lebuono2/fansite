@@ -1,0 +1,52 @@
+.cuerpo__qatar{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh 180vh 10vh ;
+    grid-template-areas:
+    "encabezado"
+    "qatar"
+    "footer";
+}
+.nota__qatar{
+    grid-area: qatar;
+}
+.seccion__mapa img{
+    width: 100vw;
+    padding: 5%;
+}
+.aside__ciudades{
+    padding: 2%;
+}
+@media(min-width: 600px){
+    .cuerpo__qatar{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 200vh 10vh ;
+        grid-template-areas:
+        "encabezado"
+        "qatar"
+        "footer";
+    }
+}
+@media(min-width: 768px){
+    .cuerpo__qatar{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 210vh 10vh ;
+        grid-template-areas:
+        "encabezado"
+        "qatar"
+        "footer";
+    }
+}
+@media(min-width: 1024px){
+    .cuerpo__qatar{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 260vh 10vh ;
+        grid-template-areas:
+        "encabezado"
+        "qatar"
+        "footer";
+    }
+}
