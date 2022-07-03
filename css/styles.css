@@ -7,12 +7,14 @@
 /*------------Estilos header index---------------------------------------------------------*/
 .body__principal{
     display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 10vh 130vh 30vh;
+    grid-template-columns: 50vw 49vw;
+    grid-template-rows: 100vh 10vh 130vh 10vs 150vh 10vh;
     grid-template-areas:
     "header header"
     "fecha fecha"
     "cuerpo cuerpo"
+    "titulo none"
+    "noticias noticias"
     "footer footer "
     ;
 }
@@ -23,11 +25,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
     grid-area: header;
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 25vh 25vh 30vh 20vh;
     grid-template-areas: 
     "titulo logo"
     "subtitulo subtitulo"
@@ -118,7 +120,6 @@
     color: white;
     grid-area: fecha;
     font-weight: 500;
-    align-self: center;
     display: flex;
 }
 .cuenta__regresiva--titulo{
@@ -135,8 +136,8 @@
     align-content: center;
 }
 .cuerpo__index__sec__video {
-    height: 80vh;
-    width: 100vw;
+    height: 40vh;
+    width: 80vw;
 }
 .cuerpo__index__sec__video video{
     height: 100%;
@@ -148,88 +149,72 @@
     padding: 20px;
     font-weight: 400;
 }
+.noticias{
+    grid-area: noticias;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 3%;
+    background: linear-gradient(to right, #860037,#860055,#860080);
+}
+.titulo_noticias{
+    color: white;
+    grid-area: titulo;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-left: 1vw;;
+    justify-content: left;
+    align-content: flex-start;
+}
 
 
 
 /*--------------------------------------------------FIN ESTILOS BODY Index ---------------------*/
 /*------------------Estilos footer---------------------------------------------------------*/
-.pie__pagina{
+
+.footer_nuevo{
     grid-area: footer;
-    background-color: #860037;
-    width: 100vw;
-    height: 40vh;
-    display: grid;
-    grid-template-columns: 50% 10% 10% 28%;
-    grid-template-rows: 20vh 20vh;
-    grid-template-areas: 
-    "redes redes none mascota"
-    "mensaje mensaje mensaje mascota"
-    ;
-}
-.pie__pagina .pie__pagina--mensaje{
-    color: white;
-    font: 0.5rem;
-    grid-area:  mensaje;
-}
-.pie__pagina .contenedor__redes{
-    grid-area:  redes;
-    font-size: x-large;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 8px;
-}
-.contenedor__redes i{
-    padding: 5px;
-}
-.pie__pagina .pie__pagina--mascota{
-    width: 25vw;
-    height: 20vh;
-    grid-area: mascota;
-    padding-right: 4px;
-    border-radius: 60%;
-    justify-self: right;
-    align-self: center;
+    width: 100%
 }
 
-/*--------------------------------------------------FIN ESTILOS Footer ---------------------*/
 /*--------------------------ESTILOS---SEDES------------------------*/
-.body__sedes{
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 25vh 1040vh 40vh;
-    grid-template-areas: 
-    "encabezado"
-    "sede"
-    "footer"
-    ;
+.logo_secundario{
+    width: 100%;
+    height: 70%;
 }
-.encabezado__secundario{
-    grid-area: encabezado;
+
+.menu_secundario{
     background: linear-gradient(to left, #860037,#860055,#860080);
-    
-}
-.encabezado__secundario h1{
     color: white;
 }
-.sedes{
-    grid-area: sede;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: auto;
-    justify-self: center;
-    align-self: center;
+.titulo_secundario{
+    background: linear-gradient(to right, #860037,#860055,#860080);
+    color: white;
 }
-.articulo__sede{
-    padding: 5%;
+.item_menu{
+    color: white;
 }
-.articulo__sede img{
-    width: 92vw;
-    height: 30vh;
+.card-img-top{
+    height: 200px;
+   
 }
-.articulo__sede p{
-    font-size: 1rem;
+.bg-qatar1{
+    background-color:#860080;
+}
+.bg-qatar2{
+    background-color: #860060;
+}
+.bg-qatar3{
+    background-color: #860050;
+}
+.bg-qatar4{
+    background-color: #860040;
+}
+.bg-qatar5{
+    background-color: #860070;
+}
+.card-title{
+    font-weight: bold;
 }
 
 
@@ -239,7 +224,7 @@
 .cuerpo__grupos{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 25vh 250vh 40vh;
+    grid-template-rows: 25vh 250vh 10vh;
     grid-template-areas: 
     "encabezado"
     "grupos"
@@ -284,7 +269,7 @@
 .cuerpo__fixture{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 30vh 400vh 320vh 40vh ;
+    grid-template-rows: 30vh 400vh 320vh 10vh ;
     grid-template-areas:
     "encabezado"
     "fixture"
@@ -349,7 +334,7 @@
     .cuerpo__qatar{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 180vh 40vh ;
+        grid-template-rows: 30vh 180vh 10vh ;
         grid-template-areas:
         "encabezado"
         "qatar"
@@ -371,7 +356,7 @@
 .cuerpo_formulario{
     display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 50vh 40vh ;
+        grid-template-rows: 30vh 50vh 10vh ;
         grid-template-areas:
         "encabezado"
         "formulario"
@@ -401,7 +386,7 @@
     .body__sedes{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 25vh 900vh 40vh;
+        grid-template-rows: 25vh 900vh 10vh;
         grid-template-areas: 
         "encabezado"
         "sede"
@@ -418,7 +403,7 @@
     .body__sedes{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 25vh 600vh 40vh;
+        grid-template-rows: 25vh 600vh 10vh;
         grid-template-areas: 
         "encabezado"
         "sede"
@@ -462,7 +447,7 @@
     .cuerpo__fixture{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 500vh 450vh 40vh ;
+        grid-template-rows: 30vh 500vh 450vh 10vh ;
         grid-template-areas:
         "encabezado"
         "fixture"
@@ -473,7 +458,7 @@
     .cuerpo__qatar{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 200vh 40vh ;
+        grid-template-rows: 30vh 200vh 10vh ;
         grid-template-areas:
         "encabezado"
         "qatar"
@@ -548,7 +533,7 @@
     .body__sedes{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 25vh 570vh 40vh;
+        grid-template-rows: 25vh 570vh 10vh;
         grid-template-areas: 
         "encabezado"
         "sede"
@@ -579,7 +564,7 @@
     .cuerpo__fixture{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 600vh 530vh 40vh ;
+        grid-template-rows: 30vh 600vh 530vh 10vh ;
         grid-template-areas:
         "encabezado"
         "fixture"
@@ -590,7 +575,7 @@
     .cuerpo__qatar{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 210vh 40vh ;
+        grid-template-rows: 30vh 210vh 10vh ;
         grid-template-areas:
         "encabezado"
         "qatar"
@@ -602,12 +587,11 @@
     /*----Encabezado index--------*/
     .encabezado__principal .contenedor__logo .contenedor__logo--img{
         border-radius: 100%;
-        width: 23vw;
-        height: 30vh;
+        width: 20vw;
+        height: 28vh;
     }
     .encabezado__principal .contenedor__logo{     
         padding-top: 6vh;
-        padding-right: 4vw;
     }
     .navegador{
         color: white;
@@ -625,6 +609,19 @@
      } 
     
     /*-----------BODY Index----------*/
+    .body__principal{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 100vh 10vh 130vh 15vs 100vh 10vh;
+        grid-template-areas:
+        "header header"
+        "fecha fecha"
+        "cuerpo cuerpo"
+        "titulo none"
+        "noticias noticias"
+        "footer footer "
+        ;
+    }
     .cuerpo__index__mensaje__bienvenida{
         font-size: 1.2rem;
         padding: 20px;
@@ -642,11 +639,11 @@
     }
     .cuerpo__index__sec__video {
         height: 80vh;
-        width: 50vw;
+        width: 45vw;
     }
     .cuerpo__index__sec__video video{
         height: 80vh;
-        width: 50vw;
+        width: 45vw;
         justify-self: center;
     }
     .cuerpo__index__mensaje__bienvenida{
@@ -655,26 +652,15 @@
         font-weight: 400;
         align-self:flex-start;
     }
-    /*-------------Footer---------*/
-    .pie__pagina .pie__pagina--mascota{
-        width: 22vw;
-        height: 30vh;
-        padding-right: 2vw;
-    }
-    .contenedor__redes i{
-        padding: 5px;
-        font-size: x-large;
-    }
     
-    .encabezado__secundario h1{
-        color: white;
-        font-size: 3rem;
-    }
+  
+    
+
     /*-------------Sedes---------*/
     .body__sedes{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 25vh 600vh 40vh;
+        grid-template-rows: 25vh 600vh 10vh;
         grid-template-areas: 
         "encabezado"
         "sede"
@@ -705,7 +691,7 @@
     .cuerpo__grupos{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 25vh 300vh 40vh;
+        grid-template-rows: 25vh 300vh 10vh;
         grid-template-areas: 
         "encabezado"
         "grupos"
@@ -739,7 +725,7 @@
     .cuerpo__fixture{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 600vh 780vh 40vh ;
+        grid-template-rows: 30vh 600vh 780vh 10vh ;
         grid-template-areas:
         "encabezado"
         "fixture"
@@ -750,7 +736,7 @@
     .cuerpo__qatar{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 260vh 40vh ;
+        grid-template-rows: 30vh 260vh 10vh ;
         grid-template-areas:
         "encabezado"
         "qatar"
@@ -763,7 +749,7 @@
     .cuerpo__fixture{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 600vh 810vh 40vh ;
+        grid-template-rows: 30vh 600vh 870vh 10vh ;
         grid-template-areas:
         "encabezado"
         "fixture"

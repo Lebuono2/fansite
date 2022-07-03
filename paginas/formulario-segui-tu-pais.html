@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
     <title>Suscribite</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body class="cuerpo_formulario">
-    <header class="encabezado__secundario">
-        <h1 class="subtitulo__secundarios">Suscribite</h1>
-        <nav class="navegador">
-            <ul class="navegador__menu">
-                <li class="navegador__menu--item"><a href="../index.html">Incio</a></li>
-                <li class="navegador__menu--item"><a href="../paginas/sedes.html">Sedes</a></li>
-                <li class="navegador__menu--item"><a href="../paginas/grupos.html">Grupos</a></li>
-                <li class="navegador__menu--item"><a href="../paginas/fixture.html">Fixture</a></li>
-                <li class="navegador__menu--item"><a href="../paginas/conoce-qatar.html">Conoce Qatar</a></li>
-                <li class="navegador__menu--item"><a href="../paginas/formulario-segui-tu-pais.html">Suscribite</a></li>
-            </ul>
-        </nav>
+  <div class="container-fluid">
+    <header class="row">
+        <h1 class="col-10 titulo_secundario pt-5 px-3  ">Suscribite</h1>
+        <div class="col contenedor_logo">
+          <a href="../index.html"><img class="col logo_secundario" src="../img/logo-qatar-blanco.jpg"  alt="Logo oficial del mundial de qatar"></a>
+       </div>
+        <nav class="navbar navbar-expand-lg menu_secundario">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link  item_menu" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  item_menu" aria-current="page" href="../paginas/sedes.html">Sedes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link item_menu" href="../paginas/grupos.html">Grupos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link item_menu" href="../paginas/fixture.html">Fixture</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link item_menu" href="../paginas/conoce-qatar.html">Conoce Qatar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link item_menu" href="../paginas/formulario-segui-tu-pais.html">Suscribite</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main class="nota__formulario">
     <section> 
@@ -44,13 +67,19 @@
             </form>
         </section>
     </main>
-    <footer class="pie__pagina">
-        <p class="pie__pagina--mensaje">Mira todos los resumenes de los partidos en nuestros canales Twitch y YouTube</p>
-        <div class="contenedor__redes">
-            <i class="bi bi-twitch"></i>
-            <i class="bi bi-youtube"></i>
-        </div>            
-        <img class="pie__pagina--mascota" src="../img/mascota.jpg" alt="Foto de la mascota oficial del mundial de Qatar 2022">
-    </footer>
+    <div class="card footer_nuevo">
+        <div class="card-header text-white bg-qatar4">
+          Vivi Qatar
+        </div>
+        <div class="card-body text-white bg-qatar5">
+          <blockquote class="blockquote mb-0">
+            <p>Suscribite a nuestro canal de Twich y You Tube</p>
+            <footer class="blockquote-footer">Mira los resumenes de los partidos <i class="bi bi-twitch"></i> <i class="bi bi-youtube"></i></footer>
+          </blockquote>
+        </div>
+      </div>
+    <footer class="row">
+    <script src="../js/bootstrap.js"></script>
+  </div>
 </body>
 </html>
