@@ -232,7 +232,6 @@
 }
 .cuerpo__index__sec__video {
   height: 40vh;
-  width: 80vw;
 }
 .cuerpo__index__sec__video video {
   height: 100%;
@@ -414,6 +413,7 @@
 .footer_nuevo {
   grid-area: footer;
   width: 100%;
+  background-color: #860070;
 }
 
 .cuerpo__fixture {
