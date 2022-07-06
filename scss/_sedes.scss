@@ -3,20 +3,18 @@
    
 }
 .bg-qatar1{
-    background-color:#860080;
+    background-color: $color-secundario;
 }
 .bg-qatar2{
-    background-color: #860060;
+    background-color: $color-terciario;
 }
 .bg-qatar3{
-    background-color: #860050;
+    background-color: $color-principal;
 }
 .bg-qatar4{
-    background-color: #860040;
+    background-color: $color-4;
 }
-.bg-qatar5{
-    background-color: #860070;
-}
+
 .card-title{
     font-weight: bold;
 }
