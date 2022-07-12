@@ -119,7 +119,7 @@
         display: flex;
         &--titulo h3{
             justify-content: center;
-            font-size: 0.8rem;
+            font-size: 1.5rem;
         }
         &--proximo{
             display: flex;
@@ -132,7 +132,7 @@
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 30vh;
+        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 40vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
@@ -203,7 +203,7 @@
         background: linear-gradient(to left, #860037,#860055,#860080);
         padding-bottom: 10px;
         padding-top: 10px;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         overflow-x:hidden;
         color: white;
         grid-area: fecha;
@@ -211,7 +211,7 @@
         display: flex;
         &--titulo h3{
             justify-content: center;
-            font-size: 0.8rem;
+            font-size: 1.5rem;
         }
         &--proximo{
             display: flex;
