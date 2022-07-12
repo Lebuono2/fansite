@@ -3,40 +3,31 @@
     background-color: $color_footer;
     width: 99%;
 }
-
-
-/*------FOOTER del INDEX-----------------------------*/
-
 .footer_nuevo--index{
-    display: grid;
-    grid-template-columns: 5vw 55vw 40vw;
-    grid-template-areas: 
-    "none menu redes";
-    justify-content: space-between;
-    .navegador{
-    color: white;
-    grid-area: menu;
-    padding-top: 30px;
-    width: 90%w;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    ul{ 
-        li{
-            a{
-                color: white;
-                text-decoration: none;
-                text-decoration-color: white;
-                font-size: larger;
+    justify-content: space-around;
+    .navegador{
+        color: white;
+        padding-top: 30px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ul{ 
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    text-decoration-color: white;
+                    font-size: larger;
+                }
             }
-          
         }
-    }
     }
     .footer_redes{
         padding-left: 10px;
         justify-content: center;
 
     }
-
 }

@@ -27,10 +27,9 @@
         padding-left: 1vw;
         transition-duration: 3s;
         &--img{
-            border-radius: 100%;
-            width: 28vw;
-            height: 24vh;
             padding-top: 3vh;
+            height: 30vh;
+            width: 18vw;
         }
         &:hover{
             transform: scale(1.5);
@@ -87,9 +86,7 @@
             padding-top: 6vh;
             padding-right: 4vw;
             &--img{
-                border-radius: 100%;
-                width: 30vw;
-                height: 30vh;
+                
             }
         }
         h1{
@@ -122,9 +119,8 @@
         .contenedor__logo{
             padding-top: 6vh;
             &--img{
-                border-radius: 100%;
-                    width: 20vw;
-                height: 28vh;
+                height: 35vh;
+                width: 18vw;
             }
         }
     }

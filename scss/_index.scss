@@ -1,7 +1,7 @@
 .body__principal{
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 20vh 150vh 10vh 210vh 60vh;
+    grid-template-rows: 100vh 20vh 150vh 10vh 210vh 50vh;
     grid-template-areas:
     "header header"
     "fecha fecha"
@@ -132,7 +132,7 @@
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 50vh;
+        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 30vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
@@ -186,7 +186,6 @@
             font-weight: 400;
             align-self:flex-start;
         }
-        
         .mensaje__mascota{
             position:absolute;
             position: fixed;
@@ -195,10 +194,8 @@
             box-shadow: 5px 5px 5px 5px black;
                 img{
                 width: 20vw;
-                height: 40vh;
-              
+                height: 40vh; 
                 }
-        
         }
     }
     .cuenta__regresiva{
@@ -225,7 +222,6 @@
         }
     }
 }
-
 @media(min-width: 1200px){
     .mensaje__mascota{
         position:absolute;
