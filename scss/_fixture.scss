@@ -1,0 +1,88 @@
+.cuerpo__fixture{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh 300vh 30vh 30vh ;
+    grid-template-areas:
+    "encabezado"
+    "fixture"
+    "finales"
+    "footer";
+}
+.fixture{
+    grid-area: fixture;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+.nota__fixture{
+    padding: 2%;
+}
+.nota__fixture h2{
+    font-size: 2rem;
+}
+.nota__fixture p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 2%;
+}
+.fixture__grupos img{
+    width: 94%;
+    padding-left: 3%;
+}
+.fase_final{
+    grid-area: finales;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.etapa__final{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    justify-self: center;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 90vw;
+    h3{
+        color:white;
+        background-color: $color-principal;
+        font-size: 1.8rem;
+    }
+    h4{
+        color:white;
+        background-color: $color-secundario;
+        font-size: 1.2rem;
+    }
+    p{
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+    &--llaves{
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        @include centradoFlex;
+        padding: 3%;
+    }
+}
+
+
+@media(min-width: 600px){
+    .cuerpo__fixture{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 400vh 30vh 30vh ;
+        grid-template-areas:
+        "encabezado"
+        "fixture"
+        "finales"
+        "footer";
+    }
+}
+
+

@@ -9,6 +9,9 @@
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
 })(this, (function (Popper) { 'use strict';
 
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
   function _interopNamespace(e) {
     if (e && e.__esModule) return e;
     const n = Object.create(null, { [Symbol.toStringTag]: { value: 'Module' } });

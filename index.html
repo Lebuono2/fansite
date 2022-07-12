@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="La unica web para verdaderos aficionados del mundial. Vivi Qatar como nunca antes.">
+    <meta name="owner" content="LB">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fansite</title>
+    <title>Fansite | La web de los fanaticos del mundial</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -21,20 +23,68 @@
              <div class="contenedor__logo">
                 <a href="./index.html"><img class="contenedor__logo--img" src="./img/logo-qatar-blanco.jpg"  alt="Logo oficial del mundial de qatar"></a>
              </div> 
-             <nav class="navegador">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./paginas/sedes.html">Sedes</a></li>
-                    <li><a href="./paginas/grupos.html">Grupos</a></li>
-                    <li><a href="./paginas/fixture.html">Fixture</a></li>
-                    <li><a href="./paginas/conoce-qatar.html">Conoce Qatar</a></li>
-                    <li><a href="./paginas/formulario-segui-tu-pais.html">Suscribite</a></li>
-                </ul>
+             <nav class="navbar fixed-top">
+              <div class="container-fluid" >
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">MENÚ
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/sedes.html">Sedes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/grupos.html">Grupos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/fixture.html">Fixture</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/conoce-qatar.html">Conoce Qatar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/formulario-segui-tu-pais.html">Suscribite</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </nav>
+              
+                       
+                    
+          
         </header>
          <!---------------------FIN-Encabezado---------------------->
+         <!---------------------Cuenta regresiva/ Proximos partidos---------------------->
     <section class="cuenta__regresiva">
-        <h2 class="cuenta__regresiva--titulo">Fecha de inicio:   21-11-2022 07:00 hs</h2>
+        <div class="cuenta__regresiva--titulo">
+          <h3>Próximos</h3>
+        </div>  
+        <article class="cuenta__regresiva--proximo">
+          <img src="./img/partidos/partido1.jpg">
+        </article>
+        <article class="cuenta__regresiva--proximo">
+          <img src="./img/partidos/partido2.jpg">
+        </article>
+          <article class="cuenta__regresiva--proximo">
+          <img src="./img/partidos/partido3.jpg">
+        </article>
+        <article class="cuenta__regresiva--proximo">
+          <img src="./img/partidos/partido4.jpg">
+        </article>
+        <article class="cuenta__regresiva--proximo">
+          <img src="./img/partidos/partido5.jpg">
+        </article>
     </section>
     <main class="cuerpo__index">   
         <!---Video y texto de presentacion-->
@@ -43,16 +93,17 @@
         </section>
         <aside class="cuerpo__index__mensaje__bienvenida">
             <h2><strong>Bienvenido al sitio web de los fans</strong></h2>
-            <p>#Compartimos la misma pasion, por eso en nuestro sitio encontras todo lo que necesitas saber con respecto al mundial  de futbol masculino organizado por FIFA en Qatar. Conoce las sedes, los grupos, el fixture. Tambien te ayudamos a llegar al mundial teniendo en un solo lugar todas las promociones vigentes para participar por vuelos y tickets para partidos. Todo el contenido que un verdadero fanatico quiere tener.</p>
+            <p>#Compartimos la misma pasion, por eso en nuestro sitio encontras todo lo que necesitas saber con respecto al mundial  de futbol masculino organizado por FIFA en Qatar. Conoce las sedes, los grupos, el fixture.  Todo el contenido que un verdadero fanatico quiere tener.<br> Ya esta todo listo para que arranque el mundial, se definieron los ultimos clasificados, con el pitazo final que declaro el ingreso de Costa Rica se termino de completar la fase de grupos, un mundial atipico que se juega en Diciembre, con muy poco tiempo de descanso entre partidos y afectado por las altas temperaturas del pais asiatico.<br>Otra particularidad importante de este mundial es la poca distancia entre estadios, posibilitando a los fanaticos mirar en vivo mas de un partido por dia sin perderce nada, ESO SI!, no olvides sacar TU FAN ID, es la unica forma de acceder a los estadios.</p>
         </aside>
+        
     </main>
 
     <!------------------------ SECCION NOTICIAS-------------------------------------------->
     
-    <div class="noticias mb-2 px-3 py-3 pe-3 row container-fluid justify-content-around">  
+    <div class="noticias mb-1 px-3 py-3 pe-3 row container-fluid justify-content-around">  
       <h3 class="titulo_noticias">NOTICIAS</h3>
       <div class="card mb-1 px-3 py-3 pe-3" style="width: 18rem;">
-      <img src="./img/noticia_convocados.jpg" class="card-img-top" alt="...">
+      <img src="./img/noticia_convocados.jpg" class="card-img-top" alt="Convocados para el mundial 2014, en base a la nueva lista para el mundial 2022">
       <div class="card-body">
         <h5 class="card-title">Nueva Lista</h5>
         <p class="card-text">La FIFA sube a 26 la lista de convocados para el mundial</p>
@@ -60,7 +111,7 @@
       </div>
    
       <div class="card mb-1 px-3 py-3 pe-3" style="width: 18rem;">
-        <img src="./img/noticia_beso.jpg" class="card-img-top" alt="...">
+        <img src="./img/noticia_beso.jpg" class="card-img-top" alt="Beso entre hinchas por las restricciones en qatar">
         <div class="card-body">
           <h5 class="card-title">Polemica mundial</h5>
           <p class="card-text">Pena de carcel para quienes tengan sexo extramatrimonial, o tengan demostraciones de afecto en publico</p>
@@ -68,32 +119,48 @@
       </div>
 
       <div class="card mb-1 px-3 py-3 pe-3" style="width: 18rem;">
-        <img src="./img/noticia_arquero.jpg" class="card-img-top" alt="...">
+        <img src="./img/noticia_arquero.jpg" class="card-img-top" alt="Arquero de Australia en la definicion contra Peru, por el repechaje para el mundial 2022">
         <div class="card-body">
           <h5 class="card-title">Fin del baile</h5>
-          <p class="card-text">La FIFA cambia el reglamente, los arqueros deberan tener los dos pies sobre la linea al momento de patearse un penal</p>
+          <p class="card-text">La FIFA cambia el reglamento, los arqueros deberan tener los dos pies sobre la linea al momento de patearse un penal</p>
         </div>
       </div>
 
     </div>
-  
+    <!------------------Mascota mundial flotante---------->
+    <div class="mensaje__mascota">
+      <img src="./img/mascota.jpg" alt="Imagen de la mascota del mundial de Qatar 2022" data-bs-custom-class="custom-popover"  data-bs-toggle="popover" title="Hola soy la mascota del mundial" data-bs-content="Visitame para conocer las novedades mas importantes del mundial de Qatar 2022, Noticias, resultados todo lo que queres saber.">
+    </div>
 
+    
+    
 
 
     <!---------------------Footer---------------------->
+    
     <div class="card footer_nuevo">
       <div class="card-header text-white bg-qatar4">
         Vivi Qatar
       </div>
-      <div class="card-body text-white bg-qatar5">
-        <blockquote class="blockquote mb-0">
-          <p>Suscribite a nuestro canal de Twich y You Tube</p>
-          <footer class="blockquote-footer">Mira los resumenes de los partidos <i class="bi bi-twitch"></i> <i class="bi bi-youtube"></i></footer>
-        </blockquote>
-      </div>
+          <footer class="blockquote-footer footer_nuevo--index">
+            <nav class="navegador">
+              <h5>MENÚ</h5>
+              <ul>
+                  <li><a href="./paginas/sedes.html">Sedes</a></li>
+                  <li><a href="./paginas/grupos.html">Grupos</a></li>
+                  <li><a href="./paginas/fixture.html">Fixture</a></li>
+                  <li><a href="./paginas/conoce-qatar.html">Conoce Qatar</a></li>
+                  <li><a href="./paginas/formulario-segui-tu-pais.html">Suscribite</a></li>
+              </ul>
+              <section class="footer_redes">
+                <p>Suscribite a nuestro canal de Twich y You Tube</p>
+                <p>Mira los resumenes de los partidos</p><i class="bi bi-twitch"></i> <i class="bi bi-youtube"></i>
+              </section>
+            </nav>
+          </footer>
     </div>
   
-
-<script src="../js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
 </body>
 </html>
