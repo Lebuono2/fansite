@@ -1,7 +1,7 @@
 .body__principal{
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 20vh 90vh 10vh 200vh 40vh;
+    grid-template-rows: 100vh 20vh 150vh 10vh 210vh 60vh;
     grid-template-areas:
     "header header"
     "fecha fecha"
@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: column;
     align-content:center;
-    align-items: baseline;
+    align-items: center;
     &__sec__video {
         height: 40vh;
         video{
@@ -61,7 +61,6 @@
         font-weight: 400;
     }
 }
-
 .mensaje__mascota{
     position:absolute;
     position: fixed;
@@ -72,9 +71,7 @@
         width: 20vw;
         height: 8vh;
         }
-
 }
-
 .noticias{
     grid-area: noticias;
     display: flex;
@@ -91,6 +88,22 @@
     padding-left: 1vw;;
     justify-content: left;
     align-content: flex-start;
+}
+
+@media(min-width: 600px){
+    .body__principal{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 100vh 20vh 120vh 10vh 210vh 60vh;
+        grid-template-areas:
+        "header header"
+        "fecha fecha"
+        "cuerpo cuerpo"
+        "titulo none"
+        "noticias noticias"
+        "footer footer "
+        ;
+    }
 }
 @media(min-width: 768px){
     .cuenta__regresiva{
@@ -116,12 +129,25 @@
             height: 22vh;
         }
     }
+    .body__principal{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 50vh;
+        grid-template-areas:
+        "header header"
+        "fecha fecha"
+        "cuerpo cuerpo"
+        "titulo none"
+        "noticias noticias"
+        "footer footer "
+        ;
+    }
 }
 @media(min-width: 1024px){
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 20vh 70vh 30vh 50vh 30vh;
+        grid-template-rows: 100vh 20vh 70vh 50vh 80vh 30vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
