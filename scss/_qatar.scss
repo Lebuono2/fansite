@@ -1,7 +1,7 @@
 .cuerpo__qatar{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 30vh 180vh 10vh ;
+    grid-template-rows: 30vh 80vh 30vh ;
     grid-template-areas:
     "encabezado"
     "qatar"
@@ -11,7 +11,8 @@
     grid-area: qatar;
 }
 .seccion__mapa img{
-    width: 100vw;
+    width: 90vw;
+    height: 95vh;
     padding: 5%;
 }
 .aside__ciudades{
@@ -21,7 +22,7 @@
     .cuerpo__qatar{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 200vh 10vh ;
+        grid-template-rows: 30vh 100vh 30vh ;
         grid-template-areas:
         "encabezado"
         "qatar"
@@ -32,7 +33,7 @@
     .cuerpo__qatar{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 210vh 10vh ;
+        grid-template-rows: 30vh 100vh 30vh ;
         grid-template-areas:
         "encabezado"
         "qatar"
@@ -43,10 +44,15 @@
     .cuerpo__qatar{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 260vh 10vh ;
+        grid-template-rows: 30vh 100vh 30vh ;
         grid-template-areas:
         "encabezado"
         "qatar"
         "footer";
+    }
+    .seccion__mapa img{
+        width: 90vw;
+        height: 100vh;
+        padding: 5%;
     }
 }

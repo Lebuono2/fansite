@@ -1,7 +1,7 @@
 .cuerpo__grupos{
     display: grid;
     grid-template-columns: 98vw;
-    grid-template-rows: 25vh 250vh 10vh;
+    grid-template-rows: 25vh 100vh 30vh;
     grid-template-areas: 
     "encabezado"
     "grupos"
@@ -18,16 +18,17 @@
 }
 .seccion__grupos__notas p{
     padding: 5%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .seccion__grupos img{
-    width: 100vw;
+    width: 90vw;
     height: 40vh;
 }
 
 .mapa__clasificados{
     padding: 1%;
-    width: 100vw;
+    width: 95vw;
+    justify-content: center;
 }
 .mapa__clasificados h2{
     padding: 2%;
@@ -35,21 +36,22 @@
     font-weight: 800;
 }
 .mapa__clasificados img{
-    width: 100vw;
-    height: 50vh;
+    width: 90%;
+    height: 30vh;
+   
 }
 
 @media(min-width: 600px){
     .seccion__grupos img{
-        width: 100vw;
+        width: 95vw;
         height: 70vh;
     }
     .mapa__clasificados{
         padding: 1%;
-        width: 100vw;
+        width: 95vw;
     }
     .mapa__clasificados img{
-        width: 100vw;
+        width: 95vw;
         height: 70vh;
     }
 }
@@ -58,7 +60,7 @@
     .cuerpo__grupos{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 25vh 300vh 10vh;
+        grid-template-rows: 25vh 100vh 30vh;
         grid-template-areas: 
         "encabezado"
         "grupos"
@@ -77,7 +79,7 @@
         font-weight: 800;
     }
     .seccion__grupos img{
-        width: 100vw;
+        width: 95vw;
         height: 90vh;
     }
     .mapa__clasificados{

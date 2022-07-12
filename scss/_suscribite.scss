@@ -1,11 +1,19 @@
 .cuerpo_formulario{
     display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 50vh 10vh ;
+        grid-template-rows: 30vh 40vh 30vh ;
         grid-template-areas:
         "encabezado"
         "formulario"
         "footer";
+}
+
+.formularios{
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
 }
     .nota__formulario{
         grid-area: formulario;

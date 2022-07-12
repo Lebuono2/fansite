@@ -131,3 +131,36 @@
         font-size: 1.2rem;
     } 
 }
+
+@media(min-width: 1024px){
+    .body__sedes{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 25vh 600vh 10vh;
+        grid-template-areas: 
+        "encabezado"
+        "sede"
+        "footer"
+        ;
+    }
+    .sedes{
+        grid-area: sede;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: first baseline;
+        width: 55vw;
+        height: 600vh;
+    }
+    .articulo__sede{
+        padding: 5%;
+        height: 150vh;
+    }
+    .articulo__sede img{
+        width: 45vw;
+        height: 50vh;
+    }
+    .articulo__sede p{
+        font-size: 1.4rem;
+    } 
+}

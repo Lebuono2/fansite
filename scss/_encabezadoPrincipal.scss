@@ -6,12 +6,13 @@
     background-repeat: none;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 999;
     height: 100vh;
     width: 100%;
     grid-area: header;
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 25vh 25vh 30vh 20vh;
+    grid-template-rows: 25vh 25vh 30vh 30vh;
     grid-template-areas: 
     "titulo logo"
     "subtitulo subtitulo"
@@ -19,16 +20,16 @@
     "menu menu"
     ;
     .contenedor__logo{
-        top: 1vw;
+        top: 2vw;
         grid-area: logo;
         justify-self:center;
-        padding-top: 2vh;
+        padding-top: 3vh;
         padding-left: 1vw;
         transition-duration: 3s;
         &--img{
             border-radius: 100%;
             width: 28vw;
-            height: 25vh;
+            height: 24vh;
             padding-top: 3vh;
         }
         &:hover{
@@ -57,38 +58,29 @@
         grid-area: subtitulo;
     }
 }
-
-.navegador{
+.offcanvas{
+    background-color: $color-terciario;
+    h5{
     color: white;
-    grid-area: menu;
-    width: 100vw;
-    ul{
-        border-top:  solid 1px;
-        border-bottom: solid 1px;
-        transition-duration: 0.3s;
-        display: flex;
-        overflow: scroll;
-        flex-direction: row;
-    
-        li{
-            display: inline-block;
-            color: white;
-            width: 20vh;
-            padding: 10px;
-            a{
-                color: white;
-                text-decoration: none;
-                text-decoration-color: white;
-                font-size: larger;
-            }
-            &:hover{
-                transform: translatey(-15%);
-                color: grey;
-                font-weight: 900;
-            }
-        }
     }
 }
+.offcanvas-body{
+    background-color: $color-4;
+    color: white;
+    font-size: 1.2rem;
+    a{
+        color: white;
+    }
+}
+.navbar-toggler{
+    color: white;
+    border-color: white;
+    &-icon{
+        color: white;
+    }
+}
+
+
 @media(min-width: 768px){
     .encabezado__principal{
         .contenedor__logo{
@@ -122,17 +114,7 @@
             grid-area: subtitulo;
         }
     }
-    .navegador{
-        color: white;
-        grid-area: menu;
-        display: flex;
-        align-content: center;
-        flex-direction: column;    
-        ul{
-            padding-left: 3vw;
-            overflow:hidden;
-        }
-    }
+    
 
 }
 @media(min-width: 1024px){
@@ -146,18 +128,5 @@
             }
         }
     }
-    .navegador{
-        color: white;
-        grid-area: menu;
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-        ul{
-            padding-left: 3vw;
-            overflow:hidden;
-            li{
-                width: 15vw;
-            } 
-        }
-    }
 }
+
