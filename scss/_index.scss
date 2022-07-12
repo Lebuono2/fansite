@@ -1,7 +1,7 @@
 .body__principal{
     display: grid;
-    grid-template-columns: 50vw 49vw;
-    grid-template-rows: 100vh 10vh 130vh 10vs 150vh 10vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100vh 30vh 100vh 10vh 200vh 30vh;
     grid-template-areas:
     "header header"
     "fecha fecha"
@@ -12,17 +12,20 @@
     ;
 }
 .cuenta__regresiva{
-    justify-content: center;
-    background: linear-gradient(to left, #860037,#860044,#860050);
+    justify-content:space-between;
+    background: linear-gradient(to left, #860037,#860055,#860080);
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 0.8rem;
+    overflow-x:scroll;
     color: white;
     grid-area: fecha;
-    font-weight: 500;
     display: flex;
-    &--titulo{
-        justify-content: center;
+    &--titulo h3{
+        font-size: 0.8rem;
+    }
+    &--proximo{
+        display: flex;
     }
 }
 
@@ -69,16 +72,26 @@
 }
 @media(min-width: 768px){
     .cuenta__regresiva{
-        background: linear-gradient(to left, #860037,#860044,#860050);
+        justify-content:space-between;
+        background: linear-gradient(to left, #860037,#860055,#860080);
         padding-bottom: 10px;
         padding-top: 10px;
-        font-size: 1rem;
+        font-size: 0.8rem;
+        overflow-x:scroll;
         color: white;
         grid-area: fecha;
         font-weight: 500;
         display: flex;
-        &--titulo{
+        &--titulo h3{
             justify-content: center;
+            font-size: 0.8rem;
+        }
+        &--proximo{
+            display: flex;
+        }
+        img{
+            width: 20vw;
+            height: 22vh;
         }
     }
 }
@@ -86,7 +99,7 @@
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 10vh 130vh 15vs 100vh 10vh;
+        grid-template-rows: 100vh 20vh 80vh 30vh 90vh 20vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
@@ -124,6 +137,29 @@
             padding: 60px;
             font-weight: 400;
             align-self:flex-start;
+        }
+    }
+    .cuenta__regresiva{
+        justify-content:space-between;
+        background: linear-gradient(to left, #860037,#860055,#860080);
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 0.8rem;
+        overflow-x:hidden;
+        color: white;
+        grid-area: fecha;
+        font-weight: 500;
+        display: flex;
+        &--titulo h3{
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+        &--proximo{
+            display: flex;
+        }
+        img{
+            width: 15vw;
+            height: 18vh;
         }
     }
 }

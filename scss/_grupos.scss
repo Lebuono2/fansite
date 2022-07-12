@@ -1,6 +1,6 @@
 .cuerpo__grupos{
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 98vw;
     grid-template-rows: 25vh 250vh 10vh;
     grid-template-areas: 
     "encabezado"
@@ -24,9 +24,7 @@
     width: 100vw;
     height: 40vh;
 }
-.seccion__grupos img:hover{
-    transform: scale(1.1);
-}
+
 .mapa__clasificados{
     padding: 1%;
     width: 100vw;
@@ -84,10 +82,10 @@
     }
     .mapa__clasificados{
         padding: 1%;
-        width: 100vw;
+       
     }
     .mapa__clasificados img{
-        width: 100vw;
+        width: 80vw;
         height: 100vh;
     }
 }

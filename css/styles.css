@@ -200,24 +200,27 @@
 }
 .body__principal {
   display: grid;
-  grid-template-columns: 50vw 49vw;
-  grid-template-rows: 100vh 10vh 130vh 10vs 150vh 10vh;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 100vh 30vh 100vh 10vh 200vh 30vh;
   grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
 }
 
 .cuenta__regresiva {
-  justify-content: center;
-  background: linear-gradient(to left, #860037, #860044, #860050);
+  justify-content: space-between;
+  background: linear-gradient(to left, #860037, #860055, #860080);
   padding-bottom: 10px;
   padding-top: 10px;
   font-size: 0.8rem;
+  overflow-x: scroll;
   color: white;
   grid-area: fecha;
-  font-weight: 500;
   display: flex;
 }
-.cuenta__regresiva--titulo {
-  justify-content: center;
+.cuenta__regresiva--titulo h3 {
+  font-size: 0.8rem;
+}
+.cuenta__regresiva--proximo {
+  display: flex;
 }
 
 .cuerpo__index {
@@ -265,24 +268,34 @@
 
 @media (min-width: 768px) {
   .cuenta__regresiva {
-    background: linear-gradient(to left, #860037, #860044, #860050);
+    justify-content: space-between;
+    background: linear-gradient(to left, #860037, #860055, #860080);
     padding-bottom: 10px;
     padding-top: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    overflow-x: scroll;
     color: white;
     grid-area: fecha;
     font-weight: 500;
     display: flex;
   }
-  .cuenta__regresiva--titulo {
+  .cuenta__regresiva--titulo h3 {
     justify-content: center;
+    font-size: 0.8rem;
+  }
+  .cuenta__regresiva--proximo {
+    display: flex;
+  }
+  .cuenta__regresiva img {
+    width: 20vw;
+    height: 22vh;
   }
 }
 @media (min-width: 1024px) {
   .body__principal {
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 10vh 130vh 15vs 100vh 10vh;
+    grid-template-rows: 100vh 20vh 80vh 30vh 90vh 20vh;
     grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
   }
   .cuerpo__index {
@@ -315,10 +328,33 @@
     font-weight: 400;
     align-self: flex-start;
   }
+  .cuenta__regresiva {
+    justify-content: space-between;
+    background: linear-gradient(to left, #860037, #860055, #860080);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    overflow-x: hidden;
+    color: white;
+    grid-area: fecha;
+    font-weight: 500;
+    display: flex;
+  }
+  .cuenta__regresiva--titulo h3 {
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  .cuenta__regresiva--proximo {
+    display: flex;
+  }
+  .cuenta__regresiva img {
+    width: 15vw;
+    height: 18vh;
+  }
 }
 .cuerpo__grupos {
   display: grid;
-  grid-template-columns: 100vw;
+  grid-template-columns: 98vw;
   grid-template-rows: 25vh 250vh 10vh;
   grid-template-areas: "encabezado" "grupos" "footer";
 }
@@ -342,10 +378,6 @@
 .seccion__grupos img {
   width: 100vw;
   height: 40vh;
-}
-
-.seccion__grupos img:hover {
-  transform: scale(1.1);
 }
 
 .mapa__clasificados {
@@ -403,16 +435,14 @@
   }
   .mapa__clasificados {
     padding: 1%;
-    width: 100vw;
   }
   .mapa__clasificados img {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
   }
 }
 .footer_nuevo {
   grid-area: footer;
-  width: 100%;
   background-color: #860070;
 }
 
@@ -542,7 +572,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 99vw;
+  width: 100%;
   grid-area: header;
   display: grid;
   grid-template-columns: 50vw 50vw;
@@ -552,16 +582,15 @@
 .encabezado__principal .contenedor__logo {
   top: 1vw;
   grid-area: logo;
-  justify-self: right;
-  padding-right: 2vw;
+  justify-self: center;
   padding-top: 2vh;
+  padding-left: 1vw;
   transition-duration: 3s;
 }
 .encabezado__principal .contenedor__logo--img {
   border-radius: 100%;
   width: 28vw;
   height: 25vh;
-  padding-right: 2vw;
   padding-top: 3vh;
 }
 .encabezado__principal .contenedor__logo:hover {
@@ -659,7 +688,7 @@
     flex-direction: column;
   }
   .navegador ul {
-    padding-left: 10vw;
+    padding-left: 3vw;
     overflow: hidden;
   }
 }
@@ -680,7 +709,7 @@
     flex-direction: column;
   }
   .navegador ul {
-    padding-left: 10vw;
+    padding-left: 3vw;
     overflow: hidden;
   }
   .navegador ul li {
