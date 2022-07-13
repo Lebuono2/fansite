@@ -14,17 +14,18 @@
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 25vh 25vh 30vh 30vh;
     grid-template-areas: 
-    "titulo logo"
+    "titulo titulo"
     "subtitulo subtitulo"
-    "none none"
+    "none logo"
     "menu menu"
     ;
     .contenedor__logo{
         top: 2vw;
         grid-area: logo;
-        justify-self:center;
+        justify-self:right;
+        align-items: flex-end;
         padding-top: 3vh;
-        padding-left: 1vw;
+        padding-right: 2vw;
         transition-duration: 3s;
         &--img{
             padding-top: 3vh;
