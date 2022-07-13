@@ -37,7 +37,7 @@
     }
     h1{
         color: white;
-        font-size: 2rem;
+        font-size: map-get($escalasFuentes, "titulos-1" );
         font-weight: 900;
         padding-top: 3vh;
         padding-left: 2vw;
@@ -52,7 +52,7 @@
         width: auto;
         height: auto;
         color: white;
-        font-size: 1rem;
+        font-size: map-get($escalasFuentes, "titulos-2" );
         font-weight: 900;
         grid-area: subtitulo;
     }
@@ -66,14 +66,14 @@
 .offcanvas-body{
     background-color: $color-4;
     color: white;
-    font-size: 1.2rem;
+    font-size: map-get($escalasFuentes, "l" );
     a{
         color: white;
     }
 }
 .navbar-toggler{
     color: white;
-    border-color: white;
+    border-color:  white;
     &-icon{
         color: white;
     }
@@ -85,13 +85,10 @@
         .contenedor__logo{
             padding-top: 6vh;
             padding-right: 4vw;
-            &--img{
-                
-            }
         }
         h1{
             color: white;
-            font-size: 3rem;
+            font-size: map-get($escalasFuentes, "titulos-1" );
             font-weight: 900;
             padding-top: 3vh;
             padding-left: 2vw;
@@ -106,7 +103,7 @@
             width: auto;
             height: auto;
             color: white;
-            font-size: 2rem;
+            font-size: map-get($escalasFuentes, "titulos-2" );
             font-weight: 900;
             grid-area: subtitulo;
         }

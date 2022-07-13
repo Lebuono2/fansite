@@ -5,7 +5,7 @@
 }
 
 * {
-  font-family: "Roboto", sans-serif, "Courier New", Courier, monospace;
+  font-family: "Merriweather Sans", "Heebo" sans-serif;
 }
 
 .cuerpo_formulario {
@@ -722,7 +722,7 @@
   width: auto;
   height: auto;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 900;
   grid-area: subtitulo;
 }
@@ -737,7 +737,7 @@
 .offcanvas-body {
   background-color: #860040;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .offcanvas-body a {
   color: white;
@@ -758,7 +758,7 @@
   }
   .encabezado__principal h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
     padding-top: 3vh;
     padding-left: 2vw;
@@ -773,7 +773,7 @@
     width: auto;
     height: auto;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 900;
     grid-area: subtitulo;
   }

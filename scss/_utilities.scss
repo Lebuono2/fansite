@@ -4,3 +4,27 @@
     align-content: center;
     
 }
+
+
+$colores: (
+
+    "bordo-primario": $color-principal,
+    "bordo-secundario": $color-secundario,
+    "bordo-terciario": $color-terciario,
+    "bordo-alt-1": $color-4,
+    "bordo-alt-2": $color-5,
+    "color-footer": $color_footer,
+);
+
+$escalasFuentes: (
+
+    "normal": 1rem,
+    "xs": 0.5rem,
+    "s": 0.75rem,
+    "l": 1.25rem,
+    "xl": 1.5rem,
+    "titulos-1": 2rem,
+    "titulos-2": 1.5rem,
+    "titulos-3": 1.3rem,
+    "titulos-4": 1.2rem,
+);
