@@ -18,7 +18,7 @@
 }
 .seccion__grupos__notas p{
     padding: 5%;
-    font-size: 1.5rem;
+    font-size: map-get($escalasFuentes, "l" );
 }
 .seccion__grupos img{
     width: 90vw;
@@ -32,7 +32,7 @@
 }
 .mapa__clasificados h2{
     padding: 2%;
-    font-size: 1.5rem;
+    font-size: map-get($escalasFuentes, "titulos-2" );
     font-weight: 800;
 }
 .mapa__clasificados img{
@@ -68,14 +68,14 @@
     }
     .seccion__grupos__notas p{
         padding: 5%;
-        font-size: 1.2rem;
+        font-size: map-get($escalasFuentes, "l" );
     }
     .seccion__grupos__notas h2{
-        font-size: 2rem;
+        font-size: map-get($escalasFuentes, "titulos-2" );
     }
     .mapa__clasificados h2{
         padding: 2%;
-        font-size: 2rem;
+        font-size: map-get($escalasFuentes, "titulos-2" );
         font-weight: 800;
     }
     .seccion__grupos img{

@@ -1,11 +1,15 @@
 .logo_secundario{
-    width: 100%;
-    height: 70%;
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
 }
 
 .menu_secundario{
     background: linear-gradient(to left, #860037,#860055,#860080);
     color: white;
+}
+.menu__secundario--icono{
+    justify-content: right;
 }
 .titulo_secundario{
     background: linear-gradient(to right, #860037,#860055,#860080);

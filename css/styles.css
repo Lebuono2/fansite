@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+.boton {
+  border-radius: 5%;
+  background-color: #860050;
+  color: white;
+  font-size: 1.25rem;
+  border-color: #860040;
+}
+
 * {
   font-family: "Merriweather Sans", "Heebo" sans-serif;
 }
@@ -11,7 +19,7 @@
 .cuerpo_formulario {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 30vh 40vh 30vh;
+  grid-template-rows: 30vh 10vh 30vh;
   grid-template-areas: "encabezado" "formulario" "footer";
 }
 
@@ -21,6 +29,10 @@
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border: 3px solid #860050;
+  border-radius: 8%;
+  margin: 5vh 5vw;
 }
 
 .nota__formulario {
@@ -28,18 +40,18 @@
 }
 
 .nota__formulario h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   padding: 2%;
 }
 
 .form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 3%;
-  align-self: center;
-  justify-self: center;
-  height: 60vh;
+  justify-content: space-between;
+  height: 39vh;
 }
 
 .card-img-top {
@@ -243,7 +255,7 @@
 .body__principal {
   display: grid;
   grid-template-columns: 50vw 50vw;
-  grid-template-rows: 100vh 20vh 150vh 10vh 210vh 50vh;
+  grid-template-rows: 100vh 20vh 150vh 10vh 210vh 60vh;
   grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
 }
 
@@ -307,6 +319,9 @@
   width: 20vw;
   height: 8vh;
 }
+.mensaje__mascota:hover {
+  cursor: pointer;
+}
 
 .noticias {
   grid-area: noticias;
@@ -359,10 +374,24 @@
     width: 20vw;
     height: 22vh;
   }
+  .mensaje__mascota {
+    position: absolute;
+    position: fixed;
+    left: 10px;
+    top: 80vh;
+    box-shadow: 5px 5px 5px 5px black;
+  }
+  .mensaje__mascota img {
+    width: 20vw;
+    height: 15vh;
+  }
+  .mensaje__mascota:hover {
+    cursor: pointer;
+  }
   .body__principal {
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 30vh 120vh 10vh 210vh 40vh;
+    grid-template-rows: 100vh 30vh 120vh 10vh 210vh 60vh;
     grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
   }
 }
@@ -370,7 +399,7 @@
   .body__principal {
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 20vh 70vh 50vh 80vh 30vh;
+    grid-template-rows: 100vh 20vh 70vh 50vh 80vh 60vh;
     grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
   }
   .cuerpo__index {
@@ -411,8 +440,8 @@
     box-shadow: 5px 5px 5px 5px black;
   }
   .cuerpo__index .mensaje__mascota img {
-    width: 20vw;
-    height: 40vh;
+    width: 12vw;
+    height: 30vh;
   }
   .cuenta__regresiva {
     justify-content: space-between;
@@ -471,7 +500,7 @@
 
 .seccion__grupos__notas p {
   padding: 5%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .seccion__grupos img {
@@ -519,14 +548,14 @@
   }
   .seccion__grupos__notas p {
     padding: 5%;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
   .seccion__grupos__notas h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .mapa__clasificados h2 {
     padding: 2%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
   }
   .seccion__grupos img {
@@ -551,6 +580,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 10vh;
 }
 .footer_nuevo--index .navegador {
   color: white;
@@ -595,7 +625,7 @@
 }
 
 .nota__fixture p {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 300;
   padding: 2%;
 }
@@ -626,7 +656,7 @@
 .etapa__final h3 {
   color: white;
   background-color: #860050;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 .etapa__final h4 {
   color: white;
@@ -635,7 +665,7 @@
 }
 .etapa__final p {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
 .etapa__final--llaves {
   border: 2px solid black;
@@ -656,13 +686,18 @@
   }
 }
 .logo_secundario {
-  width: 100%;
-  height: 70%;
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
 }
 
 .menu_secundario {
   background: linear-gradient(to left, #860037, #860055, #860080);
   color: white;
+}
+
+.menu__secundario--icono {
+  justify-content: right;
 }
 
 .titulo_secundario {
@@ -682,7 +717,6 @@
   background-repeat: no-repeat;
   z-index: 999;
   height: 100vh;
-  width: 100%;
   grid-area: header;
   display: grid;
   grid-template-columns: 50vw 50vw;
@@ -694,14 +728,14 @@
   grid-area: logo;
   justify-self: right;
   align-items: flex-end;
-  padding-top: 3vh;
-  padding-right: 2vw;
+  padding-right: 3vw;
   transition-duration: 3s;
 }
 .encabezado__principal .contenedor__logo--img {
-  padding-top: 3vh;
+  padding-top: 5vh;
   height: 30vh;
   width: 18vw;
+  object-fit: contain;
 }
 .encabezado__principal .contenedor__logo:hover {
   transform: scale(1.5);
@@ -711,21 +745,27 @@
   font-size: 2rem;
   font-weight: 900;
   padding-top: 3vh;
-  padding-left: 2vw;
   align-self: center;
   grid-area: titulo;
   width: auto;
   height: auto;
+  margin-left: 3vw;
 }
 .encabezado__principal h2 {
   padding-top: 1vh;
-  padding-left: 2vw;
   width: auto;
   height: auto;
   color: white;
   font-size: 1.5rem;
   font-weight: 900;
   grid-area: subtitulo;
+  margin-left: 3vw;
+}
+
+.navbar_index {
+  margin-top: 9vh;
+  margin-right: 3vw;
+  position: absolute;
 }
 
 .offcanvas {

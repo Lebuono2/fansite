@@ -22,7 +22,7 @@
     font-size: 2rem;
 }
 .nota__fixture p{
-    font-size: 1.3rem;
+    font-size: map-get($escalasFuentes, "l" );
     font-weight: 300;
     padding: 2%;
 }
@@ -51,16 +51,16 @@
     h3{
         color:white;
         background-color: $color-principal;
-        font-size: 1.8rem;
+        font-size: map-get($escalasFuentes, "titulos-3" );
     }
     h4{
         color:white;
         background-color: $color-secundario;
-        font-size: 1.2rem;
+        font-size: map-get($escalasFuentes, "titulos-4" );
     }
     p{
         font-weight: 600;
-        font-size: 1.4rem;
+        font-size: map-get($escalasFuentes, "l" );
     }
     &--llaves{
         border: 2px solid black;

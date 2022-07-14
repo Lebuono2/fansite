@@ -1,7 +1,7 @@
 .body__principal{
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 20vh 150vh 10vh 210vh 50vh;
+    grid-template-rows: 100vh 20vh 150vh 10vh 210vh 60vh;
     grid-template-areas:
     "header header"
     "fecha fecha"
@@ -71,7 +71,11 @@
         width: 20vw;
         height: 8vh;
         }
-}
+    &:hover{
+        cursor:pointer;
+    }    
+        
+    }
 .noticias{
     grid-area: noticias;
     display: flex;
@@ -129,10 +133,25 @@
             height: 22vh;
         }
     }
+    .mensaje__mascota{
+        position:absolute;
+        position: fixed;
+        left: 10px;
+        top:80vh;
+        box-shadow: 5px 5px 5px 5px black;
+            img{
+            width: 20vw;
+            height: 15vh;
+            }
+        &:hover{
+            cursor:pointer;
+        }    
+            
+        }
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 40vh;
+        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 60vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
@@ -147,7 +166,7 @@
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 20vh 70vh 50vh 80vh 30vh;
+        grid-template-rows: 100vh 20vh 70vh 50vh 80vh 60vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
@@ -193,8 +212,8 @@
             top:80vh;
             box-shadow: 5px 5px 5px 5px black;
                 img{
-                width: 20vw;
-                height: 40vh; 
+                width: 12vw;
+                height: 30vh; 
                 }
         }
     }
