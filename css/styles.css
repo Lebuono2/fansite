@@ -682,7 +682,6 @@
   background-repeat: no-repeat;
   z-index: 999;
   height: 100vh;
-  width: 100%;
   grid-area: header;
   display: grid;
   grid-template-columns: 50vw 50vw;
@@ -694,7 +693,6 @@
   grid-area: logo;
   justify-self: right;
   align-items: flex-end;
-  padding-top: 3vh;
   padding-right: 2vw;
   transition-duration: 3s;
 }
@@ -711,7 +709,6 @@
   font-size: 2rem;
   font-weight: 900;
   padding-top: 3vh;
-  padding-left: 2vw;
   align-self: center;
   grid-area: titulo;
   width: auto;
@@ -719,7 +716,6 @@
 }
 .encabezado__principal h2 {
   padding-top: 1vh;
-  padding-left: 2vw;
   width: auto;
   height: auto;
   color: white;
