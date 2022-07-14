@@ -255,7 +255,7 @@
 .body__principal {
   display: grid;
   grid-template-columns: 50vw 50vw;
-  grid-template-rows: 100vh 20vh 150vh 10vh 210vh 60vh;
+  grid-template-rows: 100vh 20vh 150vh 10vh 210vh 45vh;
   grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
 }
 
@@ -264,14 +264,14 @@
   background: linear-gradient(to left, #860037, #860055, #860080);
   padding-bottom: 10px;
   padding-top: 10px;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   overflow-x: scroll;
   color: white;
   grid-area: fecha;
   display: flex;
 }
 .cuenta__regresiva--titulo h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   padding-left: 10px;
 }
@@ -303,7 +303,7 @@
   width: 100%;
 }
 .cuerpo__index__mensaje__bienvenida {
-  font-size: 1rem;
+  font-size: 1.25rem;
   padding: 20px;
   font-weight: 400;
 }
@@ -335,7 +335,7 @@
 .titulo_noticias {
   color: white;
   grid-area: titulo;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   padding-left: 1vw;
   justify-content: left;
@@ -346,7 +346,7 @@
   .body__principal {
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 20vh 120vh 10vh 210vh 60vh;
+    grid-template-rows: 100vh 20vh 120vh 10vh 210vh 45vh;
     grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
   }
 }
@@ -356,7 +356,7 @@
     background: linear-gradient(to left, #860037, #860055, #860080);
     padding-bottom: 10px;
     padding-top: 10px;
-    font-size: 0.8rem;
+    font-size: 1.25rem;
     overflow-x: scroll;
     color: white;
     grid-area: fecha;
@@ -365,7 +365,7 @@
   }
   .cuenta__regresiva--titulo h3 {
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .cuenta__regresiva--proximo {
     display: flex;
@@ -391,7 +391,7 @@
   .body__principal {
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 30vh 120vh 10vh 210vh 60vh;
+    grid-template-rows: 100vh 30vh 120vh 10vh 210vh 45vh;
     grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
   }
 }
@@ -399,7 +399,7 @@
   .body__principal {
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 20vh 70vh 50vh 80vh 60vh;
+    grid-template-rows: 100vh 20vh 70vh 50vh 80vh 45vh;
     grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
   }
   .cuerpo__index {
@@ -413,7 +413,7 @@
     align-content: center;
   }
   .cuerpo__index__mensaje__bienvenida {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     padding: 20px;
     font-weight: 400;
   }
@@ -427,7 +427,7 @@
     justify-self: center;
   }
   .cuerpo__index__mensaje__bienvenida {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     padding: 60px;
     font-weight: 400;
     align-self: flex-start;
@@ -448,7 +448,7 @@
     background: linear-gradient(to left, #860037, #860055, #860080);
     padding-bottom: 10px;
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     overflow-x: hidden;
     color: white;
     grid-area: fecha;
@@ -457,7 +457,7 @@
   }
   .cuenta__regresiva--titulo h3 {
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .cuenta__regresiva--proximo {
     display: flex;
@@ -728,11 +728,10 @@
   grid-area: logo;
   justify-self: right;
   align-items: flex-end;
-  padding-right: 3vw;
+  padding-right: 2vw;
   transition-duration: 3s;
 }
 .encabezado__principal .contenedor__logo--img {
-  padding-top: 5vh;
   height: 30vh;
   width: 18vw;
   object-fit: contain;

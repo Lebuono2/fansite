@@ -23,10 +23,9 @@
         grid-area: logo;
         justify-self:right;
         align-items: flex-end;
-        padding-right: 3vw;
+        padding-right: 2vw;
         transition-duration: 3s;
         &--img{
-            padding-top: 5vh;
             height: 30vh;
             width: 18vw;
             object-fit: contain;

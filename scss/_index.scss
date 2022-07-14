@@ -1,7 +1,7 @@
 .body__principal{
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 20vh 150vh 10vh 210vh 60vh;
+    grid-template-rows: 100vh 20vh 150vh 10vh 210vh 45vh;
     grid-template-areas:
     "header header"
     "fecha fecha"
@@ -16,13 +16,13 @@
     background: linear-gradient(to left, #860037,#860055,#860080);
     padding-bottom: 10px;
     padding-top: 10px;
-    font-size: 0.8rem;
+    font-size: map-get($escalasFuentes, "titulos-3" );
     overflow-x:scroll;
     color: white;
     grid-area: fecha;
     display: flex;
     &--titulo h3{
-        font-size: 1rem;
+        font-size: map-get($escalasFuentes, "titulos-3" );
         font-weight: bold;
         padding-left: 10px;
     
@@ -56,7 +56,7 @@
         }
     }
     &__mensaje__bienvenida{
-        font-size: 1rem;
+        font-size: map-get($escalasFuentes, "l" );
         padding: 20px;
         font-weight: 400;
     }
@@ -87,7 +87,7 @@
 .titulo_noticias{
     color: white;
     grid-area: titulo;
-    font-size: 1.3rem;
+    font-size: map-get($escalasFuentes, "titulos-4" );
     font-weight: 600;
     padding-left: 1vw;;
     justify-content: left;
@@ -98,7 +98,7 @@
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 20vh 120vh 10vh 210vh 60vh;
+        grid-template-rows: 100vh 20vh 120vh 10vh 210vh 45vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
@@ -115,7 +115,7 @@
         background: linear-gradient(to left, #860037,#860055,#860080);
         padding-bottom: 10px;
         padding-top: 10px;
-        font-size: 0.8rem;
+        font-size: map-get($escalasFuentes, "l" );
         overflow-x:scroll;
         color: white;
         grid-area: fecha;
@@ -123,7 +123,7 @@
         display: flex;
         &--titulo h3{
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: map-get($escalasFuentes, "titulos-3" );
         }
         &--proximo{
             display: flex;
@@ -151,7 +151,7 @@
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 60vh;
+        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 45vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
@@ -166,7 +166,7 @@
     .body__principal{
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 20vh 70vh 50vh 80vh 60vh;
+        grid-template-rows: 100vh 20vh 70vh 50vh 80vh 45vh;
         grid-template-areas:
         "header header"
         "fecha fecha"
@@ -186,7 +186,7 @@
         flex-direction: row;
         align-content: center;
         &__mensaje__bienvenida{
-            font-size: 1.2rem;
+            font-size: map-get($escalasFuentes, "l" );
             padding: 20px;
             font-weight: 400;
         }
@@ -200,7 +200,7 @@
             }
         }
         &__mensaje__bienvenida{
-            font-size: 1.2rem;
+            font-size: map-get($escalasFuentes, "l" );
             padding: 60px;
             font-weight: 400;
             align-self:flex-start;
@@ -222,7 +222,7 @@
         background: linear-gradient(to left, #860037,#860055,#860080);
         padding-bottom: 10px;
         padding-top: 10px;
-        font-size: 1.2rem;
+        font-size: map-get($escalasFuentes, "titulos-3" );
         overflow-x:hidden;
         color: white;
         grid-area: fecha;
@@ -230,7 +230,7 @@
         display: flex;
         &--titulo h3{
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: map-get($escalasFuentes, "titulos-3" );
         }
         &--proximo{
             display: flex;
