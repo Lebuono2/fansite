@@ -1,13 +1,58 @@
 .cuerpo_formulario{
     display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 10vh 30vh ;
+        grid-template-rows: 30vh 50vh 30vh ;
         grid-template-areas:
         "encabezado"
         "formulario"
         "footer";
 }
 
+.formularios{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid $color-principal;
+    border-radius: 3%;
+    margin: 5vh 5vw;
+    background-image: url(../img/copa_mundo_mobile.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    .nota__formulario{
+        grid-area: formulario;
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-content:space-around;
+        height: auto;
+        margin-top: 10px;
+    }
+    .nota__formulario h3{
+        font-size: map-get($escalasFuentes, "titulos-3" );
+        font-weight: 400;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        height:50vh;
+        .campo_form{
+            font-weight: bold;
+        }
+    }
+
+
+@media(min-width: 600px){
 .formularios{
     width: 90%;
     display: flex;
@@ -16,23 +61,42 @@
     justify-content: center;
     align-items: center;
     border: 3px solid $color-principal;
-    border-radius: 8%;
+    border-radius: 3%;
+    width: 45vw;
     margin: 5vh 5vw;
+    background-image: url(../img/copa_mundo.jpg);
+    background-repeat: none;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
     .nota__formulario{
         grid-area: formulario;
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        height: auto;
+        padding: 5px;
+        
+        
     }
     .nota__formulario h3{
         font-size: map-get($escalasFuentes, "titulos-3" );
-        font-weight: 700;
+        font-weight: 400;
         padding: 2%;
+        width: 30vw;
     }
     .form{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         padding: 3%;
-        justify-content: space-between;
+        justify-content: space-around;
         height:39vh;
+        .campo_form{
+            font-weight: bold;
+        }
     }
-   
+}
