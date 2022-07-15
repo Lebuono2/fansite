@@ -1,7 +1,7 @@
 .cuerpo_formulario{
     display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 30vh 50vh 30vh ;
+        grid-template-rows: 30vh 48vh 30vh ;
         grid-template-areas:
         "encabezado"
         "formulario"
@@ -26,7 +26,7 @@
     .nota__formulario{
         grid-area: formulario;
         display: flex;
-        width: 80%;
+        width: 70%;
         flex-direction: column;
         justify-content: center;
         align-content:space-around;
@@ -37,7 +37,7 @@
         font-size: map-get($escalasFuentes, "titulos-3" );
         font-weight: 400;
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 15px;
 
     }
     .form{
@@ -45,7 +45,8 @@
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-around;
-        height:50vh;
+        height:45vh;
+        margin-right: 5vw;
         .campo_form{
             font-weight: bold;
         }

@@ -12,6 +12,18 @@
   border-color: #860040;
 }
 
+.etapa__final {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  justify-self: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 95vw;
+}
+
 * {
   font-family: "Merriweather Sans", "Heebo" sans-serif;
 }
@@ -19,7 +31,7 @@
 .cuerpo_formulario {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 30vh 50vh 30vh;
+  grid-template-rows: 30vh 48vh 30vh;
   grid-template-areas: "encabezado" "formulario" "footer";
 }
 
@@ -42,7 +54,7 @@
 .nota__formulario {
   grid-area: formulario;
   display: flex;
-  width: 80%;
+  width: 70%;
   flex-direction: column;
   justify-content: center;
   align-content: space-around;
@@ -54,7 +66,7 @@
   font-size: 1.3rem;
   font-weight: 400;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .form {
@@ -62,7 +74,8 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  height: 50vh;
+  height: 45vh;
+  margin-right: 5vw;
 }
 .form .campo_form {
   font-weight: bold;
@@ -692,29 +705,21 @@
   padding: 2%;
 }
 
+.fixture__grupos {
+  justify-content: center;
+}
 .fixture__grupos img {
   width: 94%;
-  padding-left: 3%;
 }
 
 .fase_final {
   grid-area: finales;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.etapa__final {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: flex-start;
-  justify-content: center;
-  justify-self: center;
-  padding-left: 3%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  width: 90vw;
-}
 .etapa__final h3 {
   color: white;
   background-color: #860050;
@@ -739,12 +744,64 @@
   padding: 3%;
 }
 
+.etapa__final--final {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/copa_mundo.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 40vh;
+  border: 0ch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  padding-top: 10%;
+  margin-left: 10%;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 2vh;
+}
+.etapa__final--final p {
+  padding-left: 5px;
+}
+
 @media (min-width: 600px) {
   .cuerpo__fixture {
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: 30vh 400vh 30vh 30vh;
     grid-template-areas: "encabezado" "fixture" "finales" "footer";
+  }
+}
+@media (min-width: 1024px) {
+  .etapa__final--final {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/copa_mundo.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 50vh;
+    border: 0ch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-self: right;
+    align-content: flex-end;
+    padding-top: 10%;
+    margin-left: 10%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 2vh;
   }
 }
 .logo_secundario {
