@@ -259,9 +259,13 @@
 }
 .body__principal {
   display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: 100vh 20vh 220vh 10vh 190vh 100vh;
-  grid-template-areas: "header header" "fecha fecha" "cuerpo cuerpo" "titulo none" "noticias noticias" "footer footer ";
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh 20vh 200vh 270vh 100vh;
+  grid-template-areas: "header" "fecha" "cuerpo" "noticias" "footer";
+}
+
+.body__principal {
+  overflow-x: hidden;
 }
 
 .cuenta__regresiva {
@@ -290,18 +294,14 @@
 }
 
 .cuerpo__index {
-  padding-top: 3%;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 2%;
   grid-area: cuerpo;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
+  margin-top: 3vh;
+  justify-content: left;
 }
 .cuerpo__index__sec__video {
-  height: 40vh;
+  height: 50vh;
 }
 .cuerpo__index__sec__video video {
   height: 100%;
@@ -311,6 +311,45 @@
   font-size: 1.25rem;
   padding: 20px;
   font-weight: 400;
+}
+
+.cuerpo_noticias {
+  grid-area: noticias;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.cuerpo_noticias h3 {
+  border-bottom: 3px solid #860040;
+  padding-left: 2vw;
+}
+.cuerpo_noticias .tarjeta_noticia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #860080;
+  border-radius: 5px;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 90%;
+  height: 70vh;
+}
+.cuerpo_noticias .tarjeta_noticia img {
+  height: 45vh;
+  justify-items: center;
+  padding: 5px;
+  object-fit: cover;
+}
+.cuerpo_noticias .tarjeta_noticia h4 {
+  color: #860080;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cuerpo_noticias .tarjeta_noticia p {
+  padding: 10px;
 }
 
 .mensaje__mascota {
@@ -328,33 +367,23 @@
   cursor: pointer;
 }
 
-.noticias {
-  grid-area: noticias;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top: 3%;
-  background: linear-gradient(to right, #860037, #860055, #860080);
+@media (min-width: 480px) {
+  .body__principal {
+    grid-template-rows: 100vh 20vh 200vh 220vh 100vh;
+  }
+  .tarjeta_noticia img {
+    padding: 5px;
+    margin-top: 3vh;
+  }
 }
-
-.titulo_noticias {
-  color: white;
-  grid-area: titulo;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding-left: 1vw;
-  justify-content: left;
-  align-content: flex-start;
-}
-
 @media (min-width: 600px) {
   .body__principal {
-    grid-template-rows: 100vh 20vh 150vh 10vh 190vh 100vh;
+    grid-template-rows: 100vh 20vh 150vh 250vh 110vh;
   }
 }
 @media (min-width: 768px) {
   .body__principal {
-    grid-template-rows: 100vh 30vh 140vh 10vh 140vh 95vh;
+    grid-template-rows: 100vh 30vh 140vh 150vh 95vh;
   }
   .cuenta__regresiva {
     justify-content: space-between;
@@ -379,6 +408,39 @@
     width: 20vw;
     height: 22vh;
   }
+  .cuerpo_noticias .tarjeta_noticia {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: "nfoto ntitulo" "nfoto nmensaje";
+    border: 3px solid #860080;
+    border-radius: 5px;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 90% vw;
+    height: 40vh;
+  }
+  .cuerpo_noticias .tarjeta_noticia img {
+    grid-area: nfoto;
+    justify-items: center;
+    padding: 5px;
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+  }
+  .cuerpo_noticias .tarjeta_noticia h4 {
+    grid-area: ntitulo;
+    color: #860080;
+    margin-top: 3vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .cuerpo_noticias .tarjeta_noticia p {
+    grid-area: nmensaje;
+    padding-bottom: 5vh;
+    margin-top: 2vh;
+  }
   .mensaje__mascota {
     position: absolute;
     position: fixed;
@@ -396,73 +458,44 @@
 }
 @media (min-width: 1024px) {
   .body__principal {
-    grid-template-rows: 100vh 20vh 100vh 10vh 70vh 70vh;
+    grid-template-rows: 100vh 20vh 210vh 50vh 80vh;
   }
-  .cuerpo__index {
-    padding-top: 3%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 2%;
-    grid-area: cuerpo;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-  }
-  .cuerpo__index__mensaje__bienvenida {
-    font-size: 1.25rem;
-    padding: 20px;
-    font-weight: 400;
-  }
-  .cuerpo__index__sec__video {
-    height: 80vh;
-    width: 45vw;
-  }
-  .cuerpo__index__sec__video video {
-    height: 80vh;
-    width: 45vw;
-    justify-self: center;
-  }
-  .cuerpo__index__mensaje__bienvenida {
-    font-size: 1.25rem;
-    padding: 60px;
-    font-weight: 400;
-    align-self: flex-start;
-  }
-  .cuerpo__index .mensaje__mascota {
+  .mensaje__mascota {
     position: absolute;
     position: fixed;
     left: 10px;
     top: 80vh;
     box-shadow: 5px 5px 5px 5px black;
   }
-  .cuerpo__index .mensaje__mascota img {
+  .mensaje__mascota img {
     width: 12vw;
     height: 30vh;
   }
-  .cuenta__regresiva {
-    justify-content: space-between;
-    background: linear-gradient(to left, #860037, #860055, #860080);
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: 1.3rem;
-    overflow-x: hidden;
-    color: white;
-    grid-area: fecha;
-    font-weight: 500;
-    display: flex;
-  }
-  .cuenta__regresiva--titulo h3 {
-    justify-content: center;
-    font-size: 1.3rem;
-  }
-  .cuenta__regresiva--proximo {
-    display: flex;
-  }
-  .cuenta__regresiva img {
-    width: 15vw;
-    height: 18vh;
-  }
 }
+.cuenta__regresiva {
+  justify-content: space-between;
+  background: linear-gradient(to left, #860037, #860055, #860080);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 1.3rem;
+  overflow-x: hidden;
+  color: white;
+  grid-area: fecha;
+  font-weight: 500;
+  display: flex;
+}
+.cuenta__regresiva--titulo h3 {
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.cuenta__regresiva--proximo {
+  display: flex;
+}
+.cuenta__regresiva img {
+  width: 15vw;
+  height: 18vh;
+}
+
 @media (min-width: 1200px) {
   .mensaje__mascota {
     position: absolute;
@@ -474,9 +507,6 @@
   .mensaje__mascota img {
     width: 20vw;
     height: 20vh;
-  }
-  .body__principal {
-    grid-template-rows: 100vh 20vh 100vh 10vh 70vh 80vh;
   }
 }
 .cuerpo__grupos {
