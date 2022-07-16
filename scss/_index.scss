@@ -1,7 +1,7 @@
 .body__principal{
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh 20vh 150vh 10vh 190vh 45vh;
+    grid-template-rows: 100vh 20vh 220vh 10vh 190vh 100vh;
     grid-template-areas:
     "header header"
     "fecha fecha"
@@ -96,20 +96,13 @@
 
 @media(min-width: 600px){
     .body__principal{
-        display: grid;
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 20vh 120vh 10vh 210vh 45vh;
-        grid-template-areas:
-        "header header"
-        "fecha fecha"
-        "cuerpo cuerpo"
-        "titulo none"
-        "noticias noticias"
-        "footer footer "
-        ;
+        grid-template-rows: 100vh 20vh 150vh 10vh 190vh 100vh;
     }
 }
 @media(min-width: 768px){
+    .body__principal{
+        grid-template-rows: 100vh 30vh 140vh 10vh 140vh 95vh;
+    }
     .cuenta__regresiva{
         justify-content:space-between;
         background: linear-gradient(to left, #860037,#860055,#860080);
@@ -148,33 +141,10 @@
         }    
             
         }
-    .body__principal{
-        display: grid;
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 30vh 120vh 10vh 210vh 45vh;
-        grid-template-areas:
-        "header header"
-        "fecha fecha"
-        "cuerpo cuerpo"
-        "titulo none"
-        "noticias noticias"
-        "footer footer "
-        ;
-    }
 }
 @media(min-width: 1024px){
     .body__principal{
-        display: grid;
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: 100vh 20vh 70vh 50vh 80vh 45vh;
-        grid-template-areas:
-        "header header"
-        "fecha fecha"
-        "cuerpo cuerpo"
-        "titulo none"
-        "noticias noticias"
-        "footer footer "
-        ;
+        grid-template-rows: 100vh 20vh 100vh 10vh 70vh 70vh;
     }
     .cuerpo__index{ 
         padding-top: 3%;
@@ -252,6 +222,9 @@
             width: 20vw;
             height: 20vh;
             }
+    }
+    .body__principal{
+        grid-template-rows: 100vh 20vh 100vh 10vh 70vh 80vh;
     }
 }
 

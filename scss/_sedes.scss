@@ -1,166 +1,89 @@
-.card-img-top{
-    height: 200px;
-   
-}
-.bg-qatar1{
-    background-color: $color-secundario;
-}
-.bg-qatar2{
-    background-color: $color-terciario;
-}
-.bg-qatar3{
-    background-color: $color-principal;
-}
-.bg-qatar4{
-    background-color: $color-4;
+.body__sedes{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1400vh 80vh;
+    grid-template-areas: 
+    "sede"
+    "footer"
+    ;
 }
 
-.card-title{
-    font-weight: bold;
+.seccion__sedes{
+    grid-area: sede;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    padding-top: 3vh;
+    .h2{
+        margin-top: 3vh;
+        padding-top: 3vh;
+        margin-bottom: 1vh;
+        justify-content: left;
+    }
+    
+    &--tarjeta{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding: 5px 5px;
+        
+        &--img{
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+        }
+    }
 }
-
 @media(min-width: 480px){
     .body__sedes{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 25vh 900vh 10vh;
-        grid-template-areas: 
-        "encabezado"
-        "sede"
-        "footer"
-        ;
-    }
-    .articulo__sede img{
-        width: 92vw;
-        height: 50vh;
+    grid-template-rows: 1010vh 80vh;
     }
 }
 @media(min-width: 600px){
     .body__sedes{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 25vh 600vh 10vh;
-        grid-template-areas: 
-        "encabezado"
-        "sede"
-        "footer"
-        ;
-    }
-    .sedes{
-        grid-area: sede;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-self: first baseline;
-        width: 45vw;
-        height: 600vh; 
-    }
-    .articulo__sede{
-        padding: 5%;
-        height: 150vh;
-    }
-    .articulo__sede img{
-        width: 45vw;
-        height: 40vh;
-    }
-    .articulo__sede p{
-        font-size: 1rem;
+    grid-template-rows: 800vh 80vh;
     }
 }
 @media(min-width: 768px){
     .body__sedes{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 25vh 570vh 10vh;
-        grid-template-areas: 
-        "encabezado"
-        "sede"
-        "footer"
-        ;
-    }
-    .sedes{
-        grid-area: sede;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-self: first baseline;
-        width: 45vw;
-        height: 570vh;    
-    }
-    .articulo__sede{
-        padding: 5%;
-        height: 140vh;
-    }
-    .articulo__sede img{
-        width: 45vw;
-        height: 45vh;
-    }
-    .articulo__sede p{
-        font-size: 1rem;
+        grid-template-rows: 780vh 20vh;
     }
 }
 @media(min-width: 1024px){
-    .body__sedes{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 25vh 600vh 10vh;
-        grid-template-areas: 
-        "encabezado"
-        "sede"
-        "footer"
-        ;
-    }
-    .sedes{
-        grid-area: sede;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-self: first baseline;
-        width: 45vw;
-        height: 600vh;
-    }
-    .articulo__sede{
-        padding: 5%;
-        height: 150vh;
-    }
-    .articulo__sede img{
-        width: 45vw;
-        height: 50vh;
-    }
-    .articulo__sede p{
-        font-size: 1.2rem;
-    } 
-}
 
-@media(min-width: 1024px){
     .body__sedes{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 25vh 600vh 10vh;
-        grid-template-areas: 
-        "encabezado"
-        "sede"
-        "footer"
-        ;
+        grid-template-rows: 500vh 20vh;
     }
-    .sedes{
-        grid-area: sede;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-self: first baseline;
-        width: 55vw;
-        height: 600vh;
+    .seccion__sedes{
+        &--tarjeta{
+            width: 90vw;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 15% 85%;
+            grid-template-areas: 
+            "foto titulo"
+            "foto texto"
+            ;
+            &--img{
+                grid-area: foto;
+                width: 45vw;
+                height: 60vh;
+                object-fit: cover;
+                margin-right: 2vw;
+                padding-right: 2vw;
+            }
+            .h3{
+                grid-area: titulo;
+            }
+            .p{
+                grid-area: texto;
+            }
+        }
     }
-    .articulo__sede{
-        padding: 5%;
-        height: 150vh;
-    }
-    .articulo__sede img{
-        width: 45vw;
-        height: 50vh;
-    }
-    .articulo__sede p{
-        font-size: 1.4rem;
-    } 
 }
