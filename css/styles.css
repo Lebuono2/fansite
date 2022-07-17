@@ -264,10 +264,6 @@
   grid-template-areas: "header" "fecha" "cuerpo" "noticias" "footer";
 }
 
-.body__principal {
-  overflow-x: hidden;
-}
-
 .cuenta__regresiva {
   justify-content: space-between;
   background: linear-gradient(to left, #860037, #860055, #860080);
@@ -459,6 +455,9 @@
 @media (min-width: 1024px) {
   .body__principal {
     grid-template-rows: 100vh 20vh 210vh 50vh 80vh;
+  }
+  .body__principal {
+    overflow-x: hidden;
   }
   .mensaje__mascota {
     position: absolute;

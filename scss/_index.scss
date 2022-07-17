@@ -11,9 +11,7 @@
     ;
 }
 
-.body__principal{
-    overflow-x: hidden;
-}
+
 
 
 .cuenta__regresiva{
@@ -235,6 +233,9 @@
         grid-template-rows: 100vh 20vh 210vh 50vh 80vh;
     }
 
+    .body__principal{
+    overflow-x: hidden;
+    }
        
         .mensaje__mascota{
             position:absolute;
