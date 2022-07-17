@@ -55,6 +55,11 @@
         grid-template-rows: 780vh 20vh;
     }
 }
+@media(min-width: 900px){
+    .body__sedes{
+        grid-template-rows: 700vh 20vh;
+    }
+}
 @media(min-width: 1024px){
 
     .body__sedes{

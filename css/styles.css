@@ -180,6 +180,11 @@
     grid-template-rows: 780vh 20vh;
   }
 }
+@media (min-width: 900px) {
+  .body__sedes {
+    grid-template-rows: 700vh 20vh;
+  }
+}
 @media (min-width: 1024px) {
   .body__sedes {
     grid-template-rows: 500vh 20vh;
@@ -257,11 +262,11 @@
     object-fit: contain;
   }
 }
-.body__principal {
+.main__index {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 100vh 20vh 200vh 270vh 100vh;
-  grid-template-areas: "header" "fecha" "cuerpo" "noticias" "footer";
+  grid-template-rows: 20vh 270vh 270vh 230vh 100vh;
+  grid-template-areas: "header" "proximos" "cuerpo" "noticias" "footer";
 }
 
 .cuerpo__index {
@@ -276,22 +281,22 @@
 }
 .cuerpo__index__sec__video video {
   height: 100%;
-  width: 100%;
+  width: 95%;
 }
 .cuerpo__index__mensaje__bienvenida {
   font-size: 1.25rem;
   padding: 20px;
   font-weight: 400;
+  width: 95%;
 }
 
 .proximos__partidos {
-  width: 100vw;
-  height: 270vh;
+  grid-area: proximos;
+  width: 90vw;
   display: flex;
   flex-direction: column;
-  padding-left: 2vw;
-  margin-top: 3vh;
-  z-index: 999;
+  padding-left: 1vw;
+  margin-top: 1vh;
 }
 .proximos__partidos h3 {
   border-bottom: 3px solid #860040;
@@ -399,24 +404,9 @@
   padding: 10px;
 }
 
-.mensaje__mascota {
-  position: absolute;
-  position: fixed;
-  left: 10px;
-  top: 80vh;
-  box-shadow: 5px 5px 5px 5px black;
-}
-.mensaje__mascota img {
-  width: 20vw;
-  height: 8vh;
-}
-.mensaje__mascota:hover {
-  cursor: pointer;
-}
-
 @media (min-width: 480px) {
-  .body__principal {
-    grid-template-rows: 100vh 20vh 200vh 220vh 100vh;
+  .main__index {
+    grid-template-rows: 20vh 280vh 250vh 240vh 100vh;
   }
   .tarjeta_noticia img {
     padding: 5px;
@@ -424,8 +414,8 @@
   }
 }
 @media (min-width: 600px) {
-  .body__principal {
-    grid-template-rows: 100vh 20vh 150vh 250vh 110vh;
+  .main__index {
+    grid-template-rows: 20vh 160vh 150vh 240vh 100vh;
   }
   .proximos__partidos {
     height: 160vh;
@@ -461,8 +451,8 @@
   }
 }
 @media (min-width: 768px) {
-  .body__principal {
-    grid-template-rows: 100vh 30vh 140vh 150vh 95vh;
+  .main__index {
+    grid-template-rows: 20vh 125vh 150vh 150vh 100vh;
   }
   .proximos__partidos {
     height: 100vh;
@@ -533,24 +523,15 @@
     padding-bottom: 5vh;
     margin-top: 2vh;
   }
-  .mensaje__mascota {
-    position: absolute;
-    position: fixed;
-    left: 10px;
-    top: 80vh;
-    box-shadow: 5px 5px 5px 5px black;
-  }
-  .mensaje__mascota img {
-    width: 20vw;
-    height: 15vh;
-  }
-  .mensaje__mascota:hover {
-    cursor: pointer;
+}
+@media (min-width: 900px) {
+  .main__index {
+    grid-template-rows: 20vh 130vh 120vh 140vh 100vh;
   }
 }
 @media (min-width: 1024px) {
-  .body__principal {
-    grid-template-rows: 100vh 20vh 210vh 50vh 80vh;
+  .main__index {
+    grid-template-rows: 20vh 80vh 100vh 100vh;
   }
   .body__principal {
     overflow-x: hidden;
@@ -583,17 +564,6 @@
   .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais img {
     width: 6vw;
     height: 8vh;
-  }
-  .mensaje__mascota {
-    position: absolute;
-    position: fixed;
-    left: 10px;
-    top: 80vh;
-    box-shadow: 5px 5px 5px 5px black;
-  }
-  .mensaje__mascota img {
-    width: 12vw;
-    height: 30vh;
   }
   .cuerpo__index {
     grid-area: cuerpo;
@@ -659,19 +629,6 @@
   }
   .cuerpo_noticias .cuerpo_noticias-notas .tarjeta_noticia p {
     padding: 10px;
-  }
-}
-@media (min-width: 1200px) {
-  .mensaje__mascota {
-    position: absolute;
-    position: fixed;
-    left: 10px;
-    top: 60vh;
-    box-shadow: 5px 5px 5px 5px black;
-  }
-  .mensaje__mascota img {
-    width: 20vw;
-    height: 20vh;
   }
 }
 .cuerpo__grupos {

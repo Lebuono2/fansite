@@ -1,10 +1,10 @@
-.body__principal{
+.main__index{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 100vh 20vh 200vh 270vh 100vh;
+    grid-template-rows: 20vh 270vh 270vh 230vh 100vh;
     grid-template-areas:
     "header"
-    "fecha"
+    "proximos"
     "cuerpo"
     "noticias"
     "footer"
@@ -21,24 +21,24 @@
         height: 50vh;
         video{
             height: 100%;
-            width: 100%;
+            width: 95%;
         }
     }
     &__mensaje__bienvenida{
         font-size: map-get($escalasFuentes, "l" );
         padding: 20px;
         font-weight: 400;
+        width: 95%;
     }
 }
 
 .proximos__partidos{
-    width: 100vw;
-    height: 270vh;
+    grid-area: proximos;
+    width: 90vw;
     display: flex;
     flex-direction: column;
-    padding-left: 2vw;
-    margin-top: 3vh;
-    z-index: 999;
+    padding-left: 1vw;
+    margin-top: 1vh;
     h3{
         border-bottom: 3px solid $color-4;
         padding-left: 2vw ;
@@ -148,25 +148,9 @@
 }
 
 
-.mensaje__mascota{
-    position:absolute;
-    position: fixed;
-    left: 10px;
-    top:80vh;
-    box-shadow: 5px 5px 5px 5px black;
-        img{
-        width: 20vw;
-        height: 8vh;
-        }
-    &:hover{
-        cursor:pointer;
-    }    
-        
-}
-
 @media(min-width: 480px){
-    .body__principal{
-        grid-template-rows: 100vh 20vh 200vh 220vh 100vh;
+    .main__index{
+        grid-template-rows: 20vh 280vh 250vh 240vh 100vh;
     }
     .tarjeta_noticia{
         img{
@@ -182,8 +166,8 @@
 
 
 @media(min-width: 600px){
-    .body__principal{
-        grid-template-rows: 100vh 20vh 150vh 250vh 110vh;
+    .main__index{
+        grid-template-rows: 20vh 160vh 150vh 240vh 100vh;
     }
     .proximos__partidos{
         height: 160vh;
@@ -223,8 +207,8 @@
 }
 
 @media(min-width: 768px){
-    .body__principal{
-        grid-template-rows: 100vh 30vh 140vh 150vh 95vh;
+    .main__index{
+        grid-template-rows: 20vh 125vh 150vh 150vh 100vh;
     }
 
     .proximos__partidos{
@@ -306,32 +290,20 @@
         }
         }
     }
-
-
-
-    .mensaje__mascota{
-        position:absolute;
-        position: fixed;
-        left: 10px;
-        top:80vh;
-        box-shadow: 5px 5px 5px 5px black;
-            img{
-            width: 20vw;
-            height: 15vh;
-            }
-        &:hover{
-            cursor:pointer;
-        }    
-            
-        }
 }
 
+@media(min-width: 900px){
+    
+    .main__index{
+        grid-template-rows: 20vh 130vh 120vh 140vh 100vh;
+    }
+}
 
 
 @media(min-width: 1024px){
     
-    .body__principal{
-        grid-template-rows: 100vh 20vh 210vh 50vh 80vh;
+    .main__index{
+        grid-template-rows: 20vh 80vh 100vh 100vh;
     }
 
     .body__principal{
@@ -371,19 +343,7 @@
             }
         }
     }
-       
-    .mensaje__mascota{
-        position:absolute;
-        position: fixed;
-        left: 10px;
-        top:80vh;
-        box-shadow: 5px 5px 5px 5px black;
-            img{
-            width: 12vw;
-            height: 30vh; 
-            }
-    }
-    
+
     .cuerpo__index{ 
         grid-area: cuerpo;
         display: flex;
@@ -452,19 +412,8 @@
 }
 
 
-@media(min-width: 1200px){
-    .mensaje__mascota{
-        position:absolute;
-        position: fixed;
-        left: 10px;
-        top:60vh;
-        box-shadow: 5px 5px 5px 5px black;
-            img{
-            width: 20vw;
-            height: 20vh;
-            }
-    }
+
     
-}
+
 
 
