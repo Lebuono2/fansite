@@ -130,7 +130,7 @@
 .body__sedes {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 1400vh 80vh;
+  /*grid-template-rows: 1400vh 80vh;*/
   grid-template-areas: "sede" "footer";
 }
 
@@ -166,29 +166,29 @@
 }
 
 @media (min-width: 480px) {
-  .body__sedes {
-    grid-template-rows: 1010vh 80vh;
-  }
+  /*.body__sedes{
+  grid-template-rows: 1010vh 80vh;
+  }*/
 }
 @media (min-width: 600px) {
-  .body__sedes {
-    grid-template-rows: 800vh 80vh;
-  }
+  /*.body__sedes{
+  grid-template-rows: 800vh 80vh;
+  }*/
 }
 @media (min-width: 768px) {
-  .body__sedes {
-    grid-template-rows: 780vh 20vh;
-  }
+  /*.body__sedes{
+      grid-template-rows: 780vh 20vh;
+  }*/
 }
 @media (min-width: 900px) {
-  .body__sedes {
-    grid-template-rows: 700vh 20vh;
-  }
+  /*.body__sedes{
+      grid-template-rows: 700vh 20vh;
+  }*/
 }
 @media (min-width: 1024px) {
-  .body__sedes {
-    grid-template-rows: 500vh 20vh;
-  }
+  /*  .body__sedes{
+        grid-template-rows: 500vh 20vh;
+    }*/
   .seccion__sedes--tarjeta {
     width: 90vw;
     display: grid;
@@ -265,7 +265,7 @@
 .main__index {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 20vh 270vh 270vh 230vh 100vh;
+  /*grid-template-rows: 20vh 270vh 270vh 230vh 100vh;*/
   grid-template-areas: "header" "proximos" "cuerpo" "noticias" "footer";
 }
 
@@ -273,8 +273,9 @@
   grid-area: cuerpo;
   display: flex;
   flex-direction: column;
-  margin-top: 3vh;
-  justify-content: left;
+  margin-top: 5vh;
+  justify-content: center;
+  align-items: center;
 }
 .cuerpo__index__sec__video {
   height: 50vh;
@@ -296,6 +297,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 1vw;
+  margin-bottom: 3vh;
   margin-top: 1vh;
 }
 .proximos__partidos h3 {
@@ -405,20 +407,21 @@
 }
 
 @media (min-width: 480px) {
-  .main__index {
-    grid-template-rows: 20vh 280vh 250vh 240vh 100vh;
-  }
+  /* .main__index{
+       grid-template-rows: 20vh 280vh 250vh 240vh 100vh;
+   }*/
   .tarjeta_noticia img {
     padding: 5px;
     margin-top: 3vh;
   }
 }
 @media (min-width: 600px) {
-  .main__index {
-    grid-template-rows: 20vh 160vh 150vh 240vh 100vh;
-  }
+  /*.main__index{
+      grid-template-rows: 20vh 160vh 150vh 240vh 100vh;
+  }*/
   .proximos__partidos {
     height: 160vh;
+    margin-bottom: 4vh;
   }
   .proximos__partidos .proximos__partidos--seccion {
     display: flex;
@@ -451,11 +454,12 @@
   }
 }
 @media (min-width: 768px) {
-  .main__index {
-    grid-template-rows: 20vh 125vh 150vh 150vh 100vh;
-  }
+  /* .main__index{
+       grid-template-rows: 20vh 125vh 150vh 150vh 100vh;
+   }*/
   .proximos__partidos {
     height: 100vh;
+    margin-bottom: 8vh;
   }
   .proximos__partidos .proximos__partidos--seccion {
     display: flex;
@@ -525,9 +529,9 @@
   }
 }
 @media (min-width: 900px) {
-  .main__index {
-    grid-template-rows: 20vh 130vh 120vh 140vh 100vh;
-  }
+  /*.main__index{
+      grid-template-rows: 20vh 130vh 120vh 140vh 100vh;
+  }*/
 }
 @media (min-width: 1024px) {
   .main__index {
@@ -896,7 +900,7 @@ footer .footer__redes .bi-youtube:hover {
 .cuerpo__fixture {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 30vh 1000vh 50vh 30vh;
+  /*grid-template-rows: 30vh 1000vh 50vh 30vh ;*/
   grid-template-areas: "encabezado" "fixture" "finales" "footer";
 }
 
@@ -1059,12 +1063,16 @@ footer .footer__redes .bi-youtube:hover {
 }
 
 @media (min-width: 600px) {
-  .cuerpo__fixture {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 30vh 400vh 30vh 30vh;
-    grid-template-areas: "encabezado" "fixture" "finales" "footer";
-  }
+  /*.cuerpo__fixture{
+      display: grid;
+      grid-template-columns: 100vw;
+      grid-template-rows: 30vh 400vh 30vh 30vh ;
+      grid-template-areas:
+      "encabezado"
+      "fixture"
+      "finales"
+      "footer";
+  }*/
 }
 @media (min-width: 1024px) {
   .fixture__grupos {
@@ -1155,11 +1163,12 @@ footer .footer__redes .bi-youtube:hover {
     justify-content: center;
     align-content: center;
   }
-  .cuerpo__fixture {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 30vh 500vh 200vh 30vh;
-  }
+  /*.cuerpo__fixture{
+      display: grid;
+      grid-template-columns: 100vw;
+      grid-template-rows: 30vh 500vh 200vh 30vh ;
+
+  }*/
   .fase_final {
     grid-area: finales;
     display: grid;

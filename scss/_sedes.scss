@@ -1,7 +1,7 @@
 .body__sedes{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 1400vh 80vh;
+    /*grid-template-rows: 1400vh 80vh;*/
     grid-template-areas: 
     "sede"
     "footer"
@@ -41,30 +41,30 @@
     }
 }
 @media(min-width: 480px){
-    .body__sedes{
+    /*.body__sedes{
     grid-template-rows: 1010vh 80vh;
-    }
+    }*/
 }
 @media(min-width: 600px){
-    .body__sedes{
+    /*.body__sedes{
     grid-template-rows: 800vh 80vh;
-    }
+    }*/
 }
 @media(min-width: 768px){
-    .body__sedes{
+    /*.body__sedes{
         grid-template-rows: 780vh 20vh;
-    }
+    }*/
 }
 @media(min-width: 900px){
-    .body__sedes{
+    /*.body__sedes{
         grid-template-rows: 700vh 20vh;
-    }
+    }*/
 }
 @media(min-width: 1024px){
 
-    .body__sedes{
+  /*  .body__sedes{
         grid-template-rows: 500vh 20vh;
-    }
+    }*/
     .seccion__sedes{
         &--tarjeta{
             width: 90vw;
