@@ -11,35 +11,6 @@
     ;
 }
 
-
-
-
-.cuenta__regresiva{
-    justify-content:space-between;
-    background: linear-gradient(to left, #860037,#860055,#860080);
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: map-get($escalasFuentes, "titulos-3" );
-    overflow-x:scroll;
-    color: white;
-    grid-area: fecha;
-    display: flex;
-    &--titulo h3{
-        font-size: map-get($escalasFuentes, "titulos-3" );
-        font-weight: bold;
-        padding-left: 10px;
-    
-    }
-    &--proximo{
-        display: flex;
-        img{
-            width: auto;
-            height: 18vh;
-            padding: 5px;
-        }
-    }
-}
-
 .cuerpo__index{ 
     grid-area: cuerpo;
     display: flex;
@@ -60,6 +31,82 @@
     }
 }
 
+.proximos__partidos{
+    width: 100vw;
+    height: 270vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+    margin-top: 3vh;
+    z-index: 999;
+    h3{
+        border-bottom: 3px solid $color-4;
+        padding-left: 2vw ;
+    }
+    .proximos__partidos--seccion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vh;
+        border-bottom: 3px solid $color-4;
+        .proximos__partidos--seccion--partido{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid $color-secundario;
+            border-radius: 10px;
+            margin-top: 2vh;
+            width: 90vw;
+            height: 40vh;
+            margin-bottom: 2vh;
+            h4{
+                border-bottom: 3px solid $color-5;
+                padding-left: 22%;
+                width: 100%;
+                font-size: 1.2rem;
+            }
+            .estadio{
+                padding-left: 1vw;
+                background-color: $color-principal;
+                border-radius: 3px;
+                width: 100%;
+                font-size: 1.2rem;
+                padding-left: 22%;
+                &:hover{
+                    cursor: pointer;
+                }
+                a{
+                    text-decoration: none;
+                    color:white;
+                    
+                }  
+            }
+            .proximos__partidos--seccion--partido--paises{
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                align-items: space-between;
+                .proximos__partidos--seccion--partido--pais{
+                    display: flex;
+                    flex-direction: column;
+                    padding-right: 5vw;
+                    padding-left: 5vw;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 13vw;
+                        height: 10vh;
+                    }
+                    .pais{
+                        font-weight: 700;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
 .cuerpo_noticias{
     grid-area: noticias;
@@ -138,35 +185,89 @@
     .body__principal{
         grid-template-rows: 100vh 20vh 150vh 250vh 110vh;
     }
+    .proximos__partidos{
+        height: 160vh;
+        .proximos__partidos--seccion{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2vh;
+            .proximos__partidos--seccion--partido{
+                width: 40vw;
+                height: 40vh;
+                margin-bottom: 2vh;
+                h4{
+                    padding-left: 15%;
+                }
+                .estadio{
+                    padding-left: 15%; 
+                }
+                .proximos__partidos--seccion--partido--paises{
+                    display: flex;
+                    flex-direction: row;
+                    justify-items: center;
+                    align-items: space-between;
+                    .proximos__partidos--seccion--partido--pais{
+                        .pais{
+                            font-weight: 700;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 @media(min-width: 768px){
     .body__principal{
         grid-template-rows: 100vh 30vh 140vh 150vh 95vh;
     }
-    .cuenta__regresiva{
-        justify-content:space-between;
-        background: linear-gradient(to left, #860037,#860055,#860080);
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-size: map-get($escalasFuentes, "l" );
-        overflow-x:scroll;
-        color: white;
-        grid-area: fecha;
-        font-weight: 500;
-        display: flex;
-        &--titulo h3{
-            justify-content: center;
-            font-size: map-get($escalasFuentes, "titulos-3" );
-        }
-        &--proximo{
+
+    .proximos__partidos{
+        height: 100vh;
+        .proximos__partidos--seccion{
             display: flex;
-        }
-        img{
-            width: 20vw;
-            height: 22vh;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2vh;
+            .proximos__partidos--seccion--partido{
+                width: 30vw;
+                height: 30vh;
+                margin-bottom: 2vh;
+                h4{
+                    padding-left: 15%;
+                }
+                .estadio{
+                    padding-left: 15%; 
+                }
+                .proximos__partidos--seccion--partido--paises{
+                    display: flex;
+                    flex-direction: row;
+                    justify-items: center;
+                    align-items: space-between;
+                    .proximos__partidos--seccion--partido--pais{
+                        .pais{
+                            font-weight: 700;
+                            font-size: 1rem;
+                        }
+                        img{
+                            width: 8vw;
+                            height: 8vh;
+                        }
+                    }
+                }
+            }
         }
     }
+    
+
+
     .cuerpo_noticias{
         .tarjeta_noticia{
         display: grid;
@@ -236,42 +337,120 @@
     .body__principal{
     overflow-x: hidden;
     }
+
+    .proximos__partidos{
+        height: 80vh;
+        width: 96vw;
+        .proximos__partidos--seccion{
+            .proximos__partidos--seccion--partido{
+                width: 25vw;
+                height: 30vh;
+                margin-bottom: 2vh;
+                h4{
+                    padding-left: 24%;
+                }
+                .estadio{
+                    padding-left: 24%; 
+                }
+                .proximos__partidos--seccion--partido--paises{
+                    display: flex;
+                    flex-direction: row;
+                    justify-items: center;
+                    align-items: space-between;
+                    .proximos__partidos--seccion--partido--pais{
+                        .pais{
+                            font-weight: 700;
+                            font-size: 1rem;
+                        }
+                        img{
+                            width: 6vw;
+                            height: 8vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
        
-        .mensaje__mascota{
-            position:absolute;
-            position: fixed;
-            left: 10px;
-            top:80vh;
-            box-shadow: 5px 5px 5px 5px black;
-                img{
-                width: 12vw;
-                height: 30vh; 
+    .mensaje__mascota{
+        position:absolute;
+        position: fixed;
+        left: 10px;
+        top:80vh;
+        box-shadow: 5px 5px 5px 5px black;
+            img{
+            width: 12vw;
+            height: 30vh; 
+            }
+    }
+    
+    .cuerpo__index{ 
+        grid-area: cuerpo;
+        display: flex;
+        flex-direction: row;
+        margin-top: 3vh;
+        justify-content: center;
+        align-items: startline;
+        &__sec__video {
+            height: 50vh;
+            margin-top: 5vh;
+            video{
+                height: 45vh;
+                width: 55vw;
+            }
+        }
+        &__mensaje__bienvenida{
+            font-size: map-get($escalasFuentes, "l" );
+            padding-right: 3vw;
+            font-weight: 400;
+        }
+    }
+    .cuerpo_noticias{
+        grid-area: noticias;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        h3{
+            border-bottom: 3px solid $color-4;
+            padding-left: 2vw ;
+        }
+        .cuerpo_noticias-notas{
+            display: flex;
+            flex-direction: row;
+            .tarjeta_noticia{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                border: 3px solid $color-secundario;
+                border-radius: 5px;
+                margin-left: 2vw;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+                width: 30vw;
+                height: 70vh;
+                    img{
+                        height: 40vh;
+                        width: 98%;
+                        justify-items: center;
+                        align-items: center;
+                        object-fit: cover;
+                    }
+                    h4{
+                        color: $color_secundario;
+                        padding: 10px;
+                        font-size: map-get($escalasFuentes, "titulos-4" );
+                        font-weight: bold;
+                    }
+                    p{
+                        padding: 10px;
+                    }
                 }
         }
     }
-    .cuenta__regresiva{
-        justify-content:space-between;
-        background: linear-gradient(to left, #860037,#860055,#860080);
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-size: map-get($escalasFuentes, "titulos-3" );
-        overflow-x:hidden;
-        color: white;
-        grid-area: fecha;
-        font-weight: 500;
-        display: flex;
-        &--titulo h3{
-            justify-content: center;
-            font-size: map-get($escalasFuentes, "titulos-3" );
-        }
-        &--proximo{
-            display: flex;
-        }
-        img{
-            width: 15vw;
-            height: 18vh;
-        }
 }
+
 
 @media(min-width: 1200px){
     .mensaje__mascota{

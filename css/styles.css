@@ -264,31 +264,6 @@
   grid-template-areas: "header" "fecha" "cuerpo" "noticias" "footer";
 }
 
-.cuenta__regresiva {
-  justify-content: space-between;
-  background: linear-gradient(to left, #860037, #860055, #860080);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-size: 1.3rem;
-  overflow-x: scroll;
-  color: white;
-  grid-area: fecha;
-  display: flex;
-}
-.cuenta__regresiva--titulo h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  padding-left: 10px;
-}
-.cuenta__regresiva--proximo {
-  display: flex;
-}
-.cuenta__regresiva--proximo img {
-  width: auto;
-  height: 18vh;
-  padding: 5px;
-}
-
 .cuerpo__index {
   grid-area: cuerpo;
   display: flex;
@@ -307,6 +282,82 @@
   font-size: 1.25rem;
   padding: 20px;
   font-weight: 400;
+}
+
+.proximos__partidos {
+  width: 100vw;
+  height: 270vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  margin-top: 3vh;
+  z-index: 999;
+}
+.proximos__partidos h3 {
+  border-bottom: 3px solid #860040;
+  padding-left: 2vw;
+}
+.proximos__partidos .proximos__partidos--seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+  border-bottom: 3px solid #860040;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #860080;
+  border-radius: 10px;
+  margin-top: 2vh;
+  width: 90vw;
+  height: 40vh;
+  margin-bottom: 2vh;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido h4 {
+  border-bottom: 3px solid #860070;
+  padding-left: 22%;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .estadio {
+  padding-left: 1vw;
+  background-color: #860050;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 1.2rem;
+  padding-left: 22%;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .estadio:hover {
+  cursor: pointer;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .estadio a {
+  text-decoration: none;
+  color: white;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: space-between;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais img {
+  width: 13vw;
+  height: 10vh;
+}
+.proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais .pais {
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .cuerpo_noticias {
@@ -376,33 +427,78 @@
   .body__principal {
     grid-template-rows: 100vh 20vh 150vh 250vh 110vh;
   }
+  .proximos__partidos {
+    height: 160vh;
+  }
+  .proximos__partidos .proximos__partidos--seccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido {
+    width: 40vw;
+    height: 40vh;
+    margin-bottom: 2vh;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido h4 {
+    padding-left: 15%;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .estadio {
+    padding-left: 15%;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: space-between;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais .pais {
+    font-weight: 700;
+    font-size: 1rem;
+  }
 }
 @media (min-width: 768px) {
   .body__principal {
     grid-template-rows: 100vh 30vh 140vh 150vh 95vh;
   }
-  .cuenta__regresiva {
+  .proximos__partidos {
+    height: 100vh;
+  }
+  .proximos__partidos .proximos__partidos--seccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to left, #860037, #860055, #860080);
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: 1.25rem;
-    overflow-x: scroll;
-    color: white;
-    grid-area: fecha;
-    font-weight: 500;
+    margin-top: 2vh;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido {
+    width: 30vw;
+    height: 30vh;
+    margin-bottom: 2vh;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido h4 {
+    padding-left: 15%;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .estadio {
+    padding-left: 15%;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises {
     display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: space-between;
   }
-  .cuenta__regresiva--titulo h3 {
-    justify-content: center;
-    font-size: 1.3rem;
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais .pais {
+    font-weight: 700;
+    font-size: 1rem;
   }
-  .cuenta__regresiva--proximo {
-    display: flex;
-  }
-  .cuenta__regresiva img {
-    width: 20vw;
-    height: 22vh;
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais img {
+    width: 8vw;
+    height: 8vh;
   }
   .cuerpo_noticias .tarjeta_noticia {
     display: grid;
@@ -459,6 +555,35 @@
   .body__principal {
     overflow-x: hidden;
   }
+  .proximos__partidos {
+    height: 80vh;
+    width: 96vw;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido {
+    width: 25vw;
+    height: 30vh;
+    margin-bottom: 2vh;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido h4 {
+    padding-left: 24%;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .estadio {
+    padding-left: 24%;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: space-between;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais .pais {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .proximos__partidos .proximos__partidos--seccion .proximos__partidos--seccion--partido .proximos__partidos--seccion--partido--paises .proximos__partidos--seccion--partido--pais img {
+    width: 6vw;
+    height: 8vh;
+  }
   .mensaje__mascota {
     position: absolute;
     position: fixed;
@@ -470,31 +595,72 @@
     width: 12vw;
     height: 30vh;
   }
+  .cuerpo__index {
+    grid-area: cuerpo;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    justify-content: center;
+    align-items: startline;
+  }
+  .cuerpo__index__sec__video {
+    height: 50vh;
+    margin-top: 5vh;
+  }
+  .cuerpo__index__sec__video video {
+    height: 45vh;
+    width: 55vw;
+  }
+  .cuerpo__index__mensaje__bienvenida {
+    font-size: 1.25rem;
+    padding-right: 3vw;
+    font-weight: 400;
+  }
+  .cuerpo_noticias {
+    grid-area: noticias;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .cuerpo_noticias h3 {
+    border-bottom: 3px solid #860040;
+    padding-left: 2vw;
+  }
+  .cuerpo_noticias .cuerpo_noticias-notas {
+    display: flex;
+    flex-direction: row;
+  }
+  .cuerpo_noticias .cuerpo_noticias-notas .tarjeta_noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border: 3px solid #860080;
+    border-radius: 5px;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 30vw;
+    height: 70vh;
+  }
+  .cuerpo_noticias .cuerpo_noticias-notas .tarjeta_noticia img {
+    height: 40vh;
+    width: 98%;
+    justify-items: center;
+    align-items: center;
+    object-fit: cover;
+  }
+  .cuerpo_noticias .cuerpo_noticias-notas .tarjeta_noticia h4 {
+    color: #860080;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .cuerpo_noticias .cuerpo_noticias-notas .tarjeta_noticia p {
+    padding: 10px;
+  }
 }
-.cuenta__regresiva {
-  justify-content: space-between;
-  background: linear-gradient(to left, #860037, #860055, #860080);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-size: 1.3rem;
-  overflow-x: hidden;
-  color: white;
-  grid-area: fecha;
-  font-weight: 500;
-  display: flex;
-}
-.cuenta__regresiva--titulo h3 {
-  justify-content: center;
-  font-size: 1.3rem;
-}
-.cuenta__regresiva--proximo {
-  display: flex;
-}
-.cuenta__regresiva img {
-  width: 15vw;
-  height: 18vh;
-}
-
 @media (min-width: 1200px) {
   .mensaje__mascota {
     position: absolute;
@@ -531,16 +697,48 @@
   font-size: 1.25rem;
 }
 
-.seccion__grupos img {
-  width: 90vw;
-  height: 40vh;
-  object-fit: contain;
+.seccion__grupos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.seccion__grupos--grupo {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #860070;
+  margin-top: 3vh;
+}
+.seccion__grupos--grupo--encabezado {
+  background-color: #860050;
+  color: white;
+  font-weight: bolder;
+}
+.seccion__grupos--grupo--pais {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding-left: 3vw;
+  padding-top: 1vh;
+  background-color: rgb(199, 195, 195);
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.seccion__grupos--grupo--pais img {
+  width: 10vw;
+  height: 10vh;
+}
+.seccion__grupos--grupo--pais p {
+  margin-left: 2vw;
 }
 
 .mapa__clasificados {
   padding: 1%;
-  width: 95vw;
+  width: 65vw;
+  height: auto;
   justify-content: center;
+  object-fit: contain;
 }
 
 .mapa__clasificados h2 {
@@ -555,9 +753,44 @@
 }
 
 @media (min-width: 600px) {
-  .seccion__grupos img {
-    width: 95vw;
-    height: 70vh;
+  .seccion__grupos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .seccion__grupos--grupo {
+    width: 40vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #860070;
+    margin-top: 3vh;
+  }
+  .seccion__grupos--grupo--encabezado {
+    background-color: #860050;
+    color: white;
+    font-weight: bolder;
+  }
+  .seccion__grupos--grupo--pais {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 3vw;
+    padding-top: 1vh;
+    background-color: rgb(199, 195, 195);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .seccion__grupos--grupo--pais img {
+    width: 10vw;
+    height: 10vh;
+  }
+  .seccion__grupos--grupo--pais p {
+    margin-left: 2vw;
   }
   .mapa__clasificados {
     padding: 1%;
@@ -582,17 +815,53 @@
   .seccion__grupos__notas h2 {
     font-size: 1.5rem;
   }
+  .seccion__grupos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 5%;
+  }
+  .seccion__grupos--grupo {
+    width: 20vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #860070;
+    margin-top: 3vh;
+  }
+  .seccion__grupos--grupo--encabezado {
+    background-color: #860050;
+    color: white;
+    font-weight: bolder;
+  }
+  .seccion__grupos--grupo--pais {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    background-color: rgb(199, 195, 195);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .seccion__grupos--grupo--pais img {
+    width: 8vw;
+    height: 10vh;
+  }
+  .seccion__grupos--grupo--pais p {
+    margin-left: 2vw;
+  }
   .mapa__clasificados h2 {
     padding: 2%;
     font-size: 1.5rem;
     font-weight: 800;
   }
-  .seccion__grupos img {
-    width: 95vw;
-    height: 90vh;
-  }
   .mapa__clasificados {
-    padding: 1%;
+    padding: 5%;
   }
   .mapa__clasificados img {
     width: 80vw;
@@ -643,6 +912,7 @@ footer .footer__redes {
   grid-area: fredes;
   padding-left: 4vw;
   padding-top: 2vh;
+  margin-bottom: 6vh;
 }
 footer .footer__redes a {
   font-size: 3rem;
@@ -669,37 +939,103 @@ footer .footer__redes .bi-youtube:hover {
 .cuerpo__fixture {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 30vh 300vh 30vh 30vh;
+  grid-template-rows: 30vh 1000vh 50vh 30vh;
   grid-template-areas: "encabezado" "fixture" "finales" "footer";
 }
 
-.fixture {
-  grid-area: fixture;
+.nota__fixture {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  justify-content: center;
-}
-
-.nota__fixture {
-  padding: 2%;
-}
-
-.nota__fixture h2 {
-  font-size: 2rem;
-}
-
-.nota__fixture p {
-  font-size: 1.25rem;
-  font-weight: 300;
-  padding: 2%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: left;
 }
 
 .fixture__grupos {
-  justify-content: center;
+  grid-area: fixture;
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+  height: auto;
+  margin-bottom: 5vh;
 }
 .fixture__grupos img {
-  width: 94%;
+  width: 10vw;
+  height: 10vh;
+}
+.fixture__grupos--grupo {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #860070;
+  width: 97%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 1vw;
+}
+.fixture__grupos--grupo--titulo {
+  color: white;
+  display: flex;
+  background-color: #860050;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.fixture__grupos--grupo--titulo p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.fixture__grupos--grupo--fecha {
+  display: flex;
+  flex-direction: column;
+}
+.fixture__grupos--grupo--fecha--titulo {
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #860080;
+  margin-left: 2vw;
+}
+.fixture__grupos--grupo--fecha--partidos {
+  display: flex;
+  flex-direction: row;
+}
+.fixture__grupos--grupo--fecha--partidos--seccion--partido {
+  display: flex;
+  flex-direction: column;
+  width: 47vw;
+  height: 42vh;
+  border: 1px solid #860060;
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+  padding: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.fixture__grupos--grupo--fecha--partidos--seccion--partido .estadio {
+  padding-left: 1vw;
+  background-color: #860050;
+  border-radius: 3px;
+  padding-left: 2%;
+}
+.fixture__grupos--grupo--fecha--partidos--seccion--partido .estadio:hover {
+  cursor: pointer;
+}
+.fixture__grupos--grupo--fecha--partidos--seccion--partido .estadio a {
+  text-decoration: none;
+  color: white;
+}
+.fixture__grupos--grupo--fecha--partidos--seccion--partido--paises {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fixture__grupos--grupo--fecha--partidos--seccion--partido--paises--pais {
+  padding-left: 4px;
+  justify-content: center;
+  align-content: center;
 }
 
 .fase_final {
@@ -732,6 +1068,10 @@ footer .footer__redes .bi-youtube:hover {
   justify-self: center;
   align-content: center;
   padding: 3%;
+}
+
+.body {
+  overflow-x: hidden;
 }
 
 .etapa__final--final {
@@ -770,13 +1110,158 @@ footer .footer__redes .bi-youtube:hover {
   }
 }
 @media (min-width: 1024px) {
+  .fixture__grupos {
+    grid-area: fixture;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 98vw;
+    height: auto;
+    margin-bottom: 5vh;
+  }
+  .fixture__grupos img {
+    width: 6vw;
+    height: 8vh;
+  }
+  .fixture__grupos--grupo {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #860070;
+    width: 45vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .fixture__grupos--grupo--titulo {
+    color: white;
+    display: flex;
+    background-color: #860050;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fixture__grupos--grupo--titulo p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .fixture__grupos--grupo--fecha {
+    display: flex;
+    flex-direction: column;
+  }
+  .fixture__grupos--grupo--fecha--titulo {
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #860080;
+    margin-left: 1vw;
+    width: 97%;
+  }
+  .fixture__grupos--grupo--fecha--partidos {
+    display: flex;
+    flex-direction: row;
+  }
+  .fixture__grupos--grupo--fecha--partidos--seccion--partido {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    height: 30vh;
+    border: 1px solid #860060;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    padding: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  .fixture__grupos--grupo--fecha--partidos--seccion--partido .estadio {
+    padding-left: 1vw;
+    background-color: #860050;
+    border-radius: 3px;
+    padding-left: 2%;
+  }
+  .fixture__grupos--grupo--fecha--partidos--seccion--partido .estadio:hover {
+    cursor: pointer;
+  }
+  .fixture__grupos--grupo--fecha--partidos--seccion--partido .estadio a {
+    text-decoration: none;
+    color: white;
+  }
+  .fixture__grupos--grupo--fecha--partidos--seccion--partido--paises {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fixture__grupos--grupo--fecha--partidos--seccion--partido--paises--pais {
+    padding-left: 4px;
+    justify-content: center;
+    align-content: center;
+  }
+  .cuerpo__fixture {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh 500vh 200vh 30vh;
+  }
+  .fase_final {
+    grid-area: finales;
+    display: grid;
+    margin-top: 10vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-template-areas: "octavos cuartos" "octavos semi" "octavos tercer" "octavos final";
+  }
+  .octavos {
+    grid-area: octavos;
+  }
+  .cuartos {
+    grid-area: cuartos;
+  }
+  .semi {
+    grid-area: semi;
+  }
+  .tercer {
+    grid-area: tercer;
+  }
+  .final {
+    grid-area: final;
+  }
+  .etapa__final {
+    width: 95%;
+    height: 100%;
+  }
+  .etapa__final h3 {
+    color: white;
+    background-color: #860050;
+    font-size: 1.3rem;
+  }
+  .etapa__final h4 {
+    color: white;
+    background-color: #860080;
+    font-size: 1.2rem;
+  }
+  .etapa__final p {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .etapa__final--llaves {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    padding: 3%;
+  }
   .etapa__final--final {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/copa_mundo.jpg);
     background-repeat: none;
-    background-size: cover;
+    object-fit: cover;
     background-repeat: no-repeat;
-    width: 40vw;
-    height: 50vh;
+    width: 98%;
+    height: 95%;
     border: 0ch;
     display: flex;
     flex-direction: column;
@@ -785,13 +1270,11 @@ footer .footer__redes .bi-youtube:hover {
     justify-self: right;
     align-content: flex-end;
     padding-top: 10%;
-    margin-left: 10%;
     color: white;
     font-weight: bold;
     border: none;
     font-weight: bold;
     font-size: larger;
-    margin-bottom: 2vh;
   }
 }
 .logo_secundario {
