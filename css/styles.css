@@ -259,6 +259,8 @@
 }
 .cuerpo__index__sec__video {
   height: 50vh;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .cuerpo__index__sec__video video {
   height: 100%;
