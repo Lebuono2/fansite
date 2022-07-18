@@ -858,8 +858,16 @@ footer .footer__redes .bi-youtube {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: left;
+  width: 95vw;
+  padding-left: 2vw;
+}
+.nota__fixture p {
+  padding: 10px;
+}
+.nota__fixture h2 {
+  padding: 10px;
 }
 
 .fixture__grupos {

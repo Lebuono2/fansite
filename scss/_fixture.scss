@@ -14,8 +14,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content:flex-start;
-    align-items:left
+    justify-content:center;
+    align-items:left;
+    width: 95vw;
+    padding-left: 2vw;
+    p{
+        padding: 10px;
+    }
+    h2{
+        padding: 10px;
+    }
 }
 
 .fixture__grupos{
