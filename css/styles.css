@@ -866,7 +866,7 @@ footer .footer__redes .bi-youtube:hover {
 .cuerpo__fixture {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-areas: "encabezado" "fixture" "finales" "footer";
+  grid-template-areas: "encabezado" "fixture" "finales" "calendario" "footer";
 }
 
 .nota__fixture {
@@ -998,6 +998,24 @@ footer .footer__redes .bi-youtube:hover {
 
 .body {
   overflow-x: hidden;
+}
+
+.calendario {
+  grid-area: calendario;
+  margin-top: 6vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 150vh;
+}
+.calendario h3 {
+  border-bottom: 3px solid #860040;
+  padding-left: 2vw;
+  justify-content: left;
+  width: 100%;
 }
 
 .etapa__final--final {
