@@ -130,6 +130,9 @@
 }
 
 @media(min-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
     .cuerpo__grupos{
         display: grid;
         grid-template-columns: 100vw;

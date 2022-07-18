@@ -733,6 +733,9 @@
   }
 }
 @media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   .cuerpo__grupos {
     display: grid;
     grid-template-columns: 100vw;
@@ -1010,11 +1013,12 @@ footer .footer__redes .bi-youtube:hover {
   margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 95vw;
-  height: 150vh;
-  overflow-x: scroll;
+  width: 100vw;
+  height: auto;
+  overflow: scroll;
+}
+.calendario img {
+  object-fit: contain;
 }
 .calendario h3 {
   border-bottom: 3px solid #860040;
@@ -1051,6 +1055,9 @@ footer .footer__redes .bi-youtube:hover {
 }
 
 @media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   .fixture__grupos {
     grid-area: fixture;
     display: flex;
@@ -1211,6 +1218,29 @@ footer .footer__redes .bi-youtube:hover {
     border: none;
     font-weight: bold;
     font-size: larger;
+  }
+  .calendario {
+    grid-area: calendario;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 150vh;
+    overflow-x: scroll;
+  }
+  .calendario img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .calendario h3 {
+    border-bottom: 3px solid #860040;
+    padding-left: 2vw;
+    justify-content: left;
+    width: 100%;
   }
 }
 .logo_secundario {
