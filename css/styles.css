@@ -253,7 +253,7 @@
   grid-area: cuerpo;
   display: flex;
   flex-direction: column;
-  margin-top: 5vh;
+  margin-top: 7vh;
   justify-content: center;
   align-items: center;
 }
@@ -276,12 +276,16 @@
   width: 90vw;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
   margin-top: 2vh;
 }
 .proximos__partidos h3 {
   border-bottom: 3px solid #860040;
   padding-left: 2vw;
+}
+.proximos__partidos .icono-calendario {
+  color: #860050;
+  padding-left: 20px;
 }
 .proximos__partidos .proximos__partidos--seccion {
   display: flex;

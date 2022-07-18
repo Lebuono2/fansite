@@ -15,7 +15,7 @@
     grid-area: cuerpo;
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
+    margin-top: 7vh;
     justify-content: center;
     align-items: center;
     &__sec__video {
@@ -39,12 +39,18 @@
     width: 90vw;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
     margin-top: 2vh;
     h3{
         border-bottom: 3px solid $color-4;
         padding-left: 2vw ;
     }
+    
+    .icono-calendario{
+        color:$color-principal;
+        padding-left: 20px;
+    }
+    
     .proximos__partidos--seccion{
         display: flex;
         flex-direction: column;
