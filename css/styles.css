@@ -1014,6 +1014,7 @@ footer .footer__redes .bi-youtube:hover {
   align-items: center;
   width: 95vw;
   height: 150vh;
+  overflow-x: scroll;
 }
 .calendario h3 {
   border-bottom: 3px solid #860040;
