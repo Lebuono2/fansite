@@ -5,7 +5,7 @@ footer{
     border-bottom: 4px solid $color-4;
     z-index: 999;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     grid-template-rows: 10% 20% 40% 20%;
     grid-template-areas: 
     "titulo titulo"
@@ -53,20 +53,12 @@ footer{
         .bi-twitch{
             color: blueviolet;
             padding-right: 3vw;
-            &:hover{
-                transform: scale(1.2);
-                transition-duration: 1s;
-                transition: 1seg;
-            }
+            
         }
         .bi-youtube{
             color:red;
             padding-left: 3vw;
-            &:hover{
-                transform: scale(1.2);
-                transition-duration: 1s;
-                transition: 1seg;
-            }
+            
         }
     }
 

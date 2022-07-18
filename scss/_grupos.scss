@@ -1,7 +1,6 @@
 .cuerpo__grupos{
     display: grid;
     grid-template-columns: 98vw;
-    grid-template-rows: 25vh 100vh 30vh;
     grid-template-areas: 
     "encabezado"
     "grupos"
@@ -130,13 +129,10 @@
 }
 
 @media(min-width: 1024px){
-    body{
-        overflow-x: hidden;
-    }
+
     .cuerpo__grupos{
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 25vh 100vh 30vh;
         grid-template-areas: 
         "encabezado"
         "grupos"
