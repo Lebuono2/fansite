@@ -1,7 +1,6 @@
 .cuerpo__fixture{
     display: grid;
     grid-template-columns: 100vw;
-    /*grid-template-rows: 30vh 1000vh 50vh 30vh ;*/
     grid-template-areas:
     "encabezado"
     "fixture"
@@ -169,27 +168,6 @@
     }
 }
 
-
-@media(min-width: 600px){
-    /*.cuerpo__fixture{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 30vh 400vh 30vh 30vh ;
-        grid-template-areas:
-        "encabezado"
-        "fixture"
-        "finales"
-        "footer";
-    }*/
-}
-
-
-
-
-
-
-
-
 @media (min-width: 1024px){
    
     .fixture__grupos{
@@ -202,7 +180,7 @@
         margin-bottom: 5vh;
         img{
             width: 6vw;
-            height: 8vh;
+            height: 9vh;
         }
         &--grupo{
             display: flex;
@@ -272,8 +250,8 @@
                             justify-content: space-between;
                             &--pais{
                                 padding-left: 4px;
-                                justify-content: center;
-                                align-content: center;
+                                justify-items: center;
+                                align-items: center;
                             }
                             
                         }
@@ -282,12 +260,6 @@
             }
         }
     }
-    /*.cuerpo__fixture{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 30vh 500vh 200vh 30vh ;
-        
-    }*/
     .fase_final{
         grid-area: finales;
         display: grid;
