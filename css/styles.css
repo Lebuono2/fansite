@@ -604,6 +604,9 @@
 .seccion__grupos__notas {
   padding: 5%;
 }
+.seccion__grupos__notas h2 {
+  padding-left: 2vw;
+}
 
 .seccion__grupos__notas p {
   padding: 5%;
@@ -613,6 +616,9 @@
 .seccion__grupos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
@@ -621,11 +627,13 @@
   flex-direction: column;
   border: 2px solid #860070;
   margin-top: 3vh;
+  width: 90vw;
 }
 .seccion__grupos--grupo--encabezado {
   background-color: #860050;
   color: white;
   font-weight: bolder;
+  padding-left: 2vw;
 }
 .seccion__grupos--grupo--pais {
   display: flex;
@@ -734,7 +742,7 @@
     flex-wrap: wrap;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    margin-left: 5%;
+    margin-left: 2%;
   }
   .seccion__grupos--grupo {
     width: 20vw;
