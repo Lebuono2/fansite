@@ -1365,7 +1365,7 @@ footer .footer__redes .bi-youtube {
     align-items: center;
     width: 95vw;
     height: 150vh;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .calendario img {
     width: 100%;
