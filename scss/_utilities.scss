@@ -68,4 +68,151 @@ width: 95vw;
 }
 
 
+@keyframes CONTENT_ANIMATION{
+  
+  0% {
+    opacity:0;
+  }
+  10% {
+    opacity:0;
+  }
+  25% {
+    opacity:0;
+  }
+  35% {
+    opacity:1;
+  }
+  60% {
+    opacity:1;
+  }
+  70% {
+    opacity:0;
+  }
+  90% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+@keyframes FABTOCARD {
+  0% {
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    left: 90%;
+    top: 80%;
+  }
+  10% {
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    left: 90%;
+    top: 80%;
+  }
+  25% {
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+  }
+  35% {
+    background: #fff;
+    height: 300px;
+    width: 300px;
+    border-radius: 2px;
+    left: 42.5%;
+    top: 35%;
+  }
+  60% {
+    background: #fff;
+    height: 300px;
+    width: 300px;
+    border-radius: 2px;
+    left: 42.5%;
+    top: 35%;
+  }
+  70% {
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+  }
+  90% {
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    left: 90%;
+    top: 80%;
+  }
+  100% {
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    left: 90%;
+    top: 80%;
+  }
+}
 
+@keyframes animacionIconos {
+
+20%{
+  color: $color-principal;
+  text-shadow: 4px 4px 4px gray;
+}
+30%{
+  color: $color-secundario;
+  text-shadow: 4px 4px 4px gray;
+}
+
+50%{
+  color: $color-terciario;
+  text-shadow: 4px 4px 4px gray;
+}
+
+
+80%{
+  color: $color-4;
+  text-shadow: 4px 4px 4px gray;
+}
+
+
+100%{
+  color: $color-5;
+  text-shadow: 4px 4px 4px gray;
+}
+
+}
+
+@keyframes animaciontexto {
+
+  20%{
+    color: #860099
+  }
+  30%{
+    color: #ab2fbb
+  }
+  
+  50%{
+    color: #6e9dc9
+  }
+  
+  
+  80%{
+    color: #88a761
+  }
+  
+  
+  100%{
+    color: #ca7f7f
+  }
+  
+  }

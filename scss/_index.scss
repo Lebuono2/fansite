@@ -45,9 +45,11 @@ body{
     flex-direction: column;
     margin-bottom: 4vh;
     margin-top: 2vh;
+  
     h3{
         border-bottom: 3px solid $color-4;
         padding-left: 2vw ;
+
     }
     
     .icono-calendario{
@@ -72,6 +74,10 @@ body{
             width: 90vw;
             height: 40vh;
             margin-bottom: 2vh;
+            animation-name: CONTENT_ANIMATION;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            
             h4{
                 border-bottom: 3px solid $color-5;
                 padding-left: 22%;

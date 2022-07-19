@@ -24,14 +24,14 @@
         justify-self:right;
         align-items: flex-end;
         padding-right: 2vw;
-        transition-duration: 3s;
+        transition-duration: 2s;
         &--img{
             height: 30vh;
             width: 18vw;
             object-fit: contain;
         }
         &:hover{
-            transform: scale(1.5);
+            transform: scale(1.1);
         }
     }
     h1{
@@ -54,6 +54,9 @@
         font-weight: 900;
         grid-area: subtitulo;
         margin-left: 3vw;
+        animation-name: animaciontexto;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
     }
 }
 .navbar_index{
