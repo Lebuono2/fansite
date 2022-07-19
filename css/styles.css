@@ -5,11 +5,22 @@
 }
 
 .boton {
-  border-radius: 5%;
+  border-radius: 10px;
   background-color: #860050;
   color: white;
   font-size: 1.25rem;
   border-color: #860040;
+  padding-left: 10vw;
+}
+.boton:hover {
+  cursor: pointer;
+  background-color: grey;
+  border-color: grey;
+}
+.boton:active {
+  background-color: grey;
+  transform: scale(0.8);
+  transition-duration: 1s;
 }
 
 .etapa__final {
@@ -839,6 +850,9 @@ footer .footer__redes {
 footer .footer__redes a {
   font-size: 3rem;
 }
+footer .footer__redes a:hover {
+  color: grey;
+}
 footer .footer__redes .bi-twitch {
   color: blueviolet;
   padding-right: 3vw;
@@ -1384,6 +1398,34 @@ footer .footer__redes .bi-youtube {
     height: 35vh;
     width: 18vw;
   }
+}
+.carga_correcta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border: 2px solid #860040;
+  border-radius: 10px;
+}
+.carga_correcta img {
+  width: 40vw;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+}
+.carga_correcta p {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.carga_correcta h2 {
+  color: #860080;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

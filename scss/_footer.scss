@@ -49,6 +49,9 @@ footer{
         margin-bottom: 6vh;
         a{
             font-size: 3rem;
+            &:hover{
+                color: grey;
+            }
         }
         .bi-twitch{
             color: blueviolet;
