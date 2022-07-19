@@ -231,6 +231,10 @@
   grid-template-areas: "header" "proximos" "cuerpo" "noticias" "footer";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .cuerpo__index {
   grid-area: cuerpo;
   display: flex;
@@ -489,9 +493,6 @@
 @media (min-width: 1024px) {
   .main__index {
     grid-template-rows: 20vh 80vh 100vh 100vh;
-  }
-  body {
-    overflow-x: hidden;
   }
   .proximos__partidos {
     height: 80vh;
