@@ -128,15 +128,18 @@
         color:white;
         background-color: $color-principal;
         font-size: map-get($escalasFuentes, "titulos-3" );
+        padding-left: 1vw;
     }
     h4{
         color:white;
         background-color: $color-secundario;
         font-size: map-get($escalasFuentes, "titulos-4" );
+        padding-left: 1vw;
     }
     p{
         font-weight: 600;
         font-size: map-get($escalasFuentes, "l" );
+        padding-left: 1vw;
     }
     &--llaves{
         border: 2px solid black;
@@ -322,15 +325,19 @@
             color:white;
             background-color: $color-principal;
             font-size: map-get($escalasFuentes, "titulos-3" );
+            padding-left: 1vw;
+            
         }
         h4{
             color:white;
             background-color: $color-secundario;
             font-size: map-get($escalasFuentes, "titulos-4" );
+            padding-left: 1vw;
         }
         p{
             font-weight: 600;
             font-size: map-get($escalasFuentes, "l" );
+            padding-left: 1vw;
         }
         &--llaves{
             width: 100%;

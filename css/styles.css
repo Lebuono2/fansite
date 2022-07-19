@@ -983,15 +983,18 @@ footer .footer__redes .bi-youtube {
   color: white;
   background-color: #860050;
   font-size: 1.3rem;
+  padding-left: 1vw;
 }
 .etapa__final h4 {
   color: white;
   background-color: #860080;
   font-size: 1.2rem;
+  padding-left: 1vw;
 }
 .etapa__final p {
   font-weight: 600;
   font-size: 1.25rem;
+  padding-left: 1vw;
 }
 .etapa__final--llaves {
   border: 2px solid black;
@@ -1170,15 +1173,18 @@ footer .footer__redes .bi-youtube {
     color: white;
     background-color: #860050;
     font-size: 1.3rem;
+    padding-left: 1vw;
   }
   .etapa__final h4 {
     color: white;
     background-color: #860080;
     font-size: 1.2rem;
+    padding-left: 1vw;
   }
   .etapa__final p {
     font-weight: 600;
     font-size: 1.25rem;
+    padding-left: 1vw;
   }
   .etapa__final--llaves {
     width: 100%;
