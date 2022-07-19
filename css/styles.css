@@ -8,19 +8,13 @@
   border-radius: 10px;
   background-color: #860050;
   color: white;
-  font-size: 1.25rem;
   border-color: #860040;
-  padding-left: 10vw;
+  padding-left: 25%;
 }
 .boton:hover {
   cursor: pointer;
   background-color: grey;
   border-color: grey;
-}
-.boton:active {
-  background-color: grey;
-  transform: scale(0.8);
-  transition-duration: 1s;
 }
 
 .etapa__final {

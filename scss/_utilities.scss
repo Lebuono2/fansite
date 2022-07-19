@@ -33,20 +33,13 @@ $escalasFuentes: (
     border-radius: 10px;
     background-color: $color-principal;
     color: white;
-    font-size: map-get($escalasFuentes, "l" ); 
     border-color: $color-4;
-    padding-left: 10vw;
+    padding-left: 25%;
     &:hover{
         cursor: pointer;
         background-color: grey;
         border-color: grey;
     
-    }
-    &:active{
-        background-color:grey;
-        transform: scale(0.8);
-        transition-duration: 1s;
-     
     }
 };
 
